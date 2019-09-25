@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+<link href="{{ "/assets/css/main.css" | relative_url }}" rel="stylesheet">
 
 I'm Siyuan Yan, or Matt.
 

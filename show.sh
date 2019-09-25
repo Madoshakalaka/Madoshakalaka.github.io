@@ -5,6 +5,5 @@ if [[ $# -eq 0 ]] ; then
     exit 1
 fi
 
-cd blog
 
 xdg-open $(bundle show $*)
