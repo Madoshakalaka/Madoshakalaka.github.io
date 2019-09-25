@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I'm Siyuan Yan, or Matt.
+I'm Matt Yan.
+
+or I'm proudly Siyuan Yan (严思圆 /jǽn sz̩̄ː ɥǽn/) If you'd like to pronounce that.
 
 I love geeky things.
 
