@@ -30,7 +30,7 @@ github_username:  Madoshakalaka
 show_excerpts: true
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 
 plugins:
   - jekyll-feed
