@@ -34,6 +34,7 @@ theme: minima
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 disqus:
   shortname: matt-github
@@ -59,3 +60,4 @@ exclude:
   - vendor/ruby/
   - show.sh
   - watch.sh
+  - README.md
