@@ -2,7 +2,7 @@
 layout: post
 title:  "Remap keys for specific device on ubuntu"
 date:   2019-09-25 00:47:00 -0600
-categories: 
+comments: true
 ---
 
 
