@@ -22,7 +22,10 @@ function clean(){
         a_string = a_string.replace(/͡/g, '')
         b_string = b_string.replace(/͡/g, '')
     }
-
+    if ($("#punctuations").is(":checked")){
+        a_string = a_string.replace(/[!.,?'"]+/g, '')
+        b_string = b_string.replace(/[!.,?'"]+/g, '')
+    }
 
 
     return [a_string, b_string]
