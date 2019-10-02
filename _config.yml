@@ -54,11 +54,15 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - package.json
+  - package.lock
   - node_modules/
+  - src/ # webpack stuff
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - webpack.config.js
   - show.sh
   - watch.sh
   - README.md
