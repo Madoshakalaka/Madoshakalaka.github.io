@@ -2,6 +2,8 @@ const axios = require('axios')
 const $ = require('jquery')
 
 
+//random comment
+
 function isVoiceless(c) {
     return 'pksfʃt'.includes(c)
 }
@@ -26,7 +28,7 @@ function isObstruent(c) {
     return 'pbtdkgfvɵðszʃʒh'.includes(c) && c.length > 0
 }
 
-function isStop(c){
+function isStop(c) {
     return 'pbtdkg'.includes(c) && c.length > 0
 }
 
@@ -40,8 +42,8 @@ function isConsonant(c) {
 
 }
 
-function isPunctuationOrWhitespace(c){
-    return c.trim().length === 0 || ! "wvŋpɝɑɾbɚɔʊnujmkiədæɛosɵeʒlzʌgɹfɪhðʃat".includes(c)
+function isPunctuationOrWhitespace(c) {
+    return c.trim().length === 0 || !"wvŋpɝɑɾbɚɔʊnujmkiədæɛosɵeʒlzʌgɹfɪhðʃat".includes(c)
 }
 
 $(() => {
@@ -186,8 +188,8 @@ $(() => {
                         continue
                     }
                     if (old_char === 'l') {
-                        if ((i - 1 > 0 && isVowel(old_ipa.charAt(i - 1))) && (i + 1 === old_ipa.length || isConsonant(old_ipa.charAt(i + 1))))  {
-                            if (i === 0 || isNotPhoneme(old_ipa.charAt(i -1))){
+                        if ((i - 1 > 0 && isVowel(old_ipa.charAt(i - 1))) && (i + 1 === old_ipa.length || isConsonant(old_ipa.charAt(i + 1)))) {
+                            if (i === 0 || isNotPhoneme(old_ipa.charAt(i - 1))) {
                                 continue
                             }
                             res += '<span style="color: #5de2c3;">' + 'ɫ' + '</span>'
@@ -199,8 +201,8 @@ $(() => {
 
                 }
 
-                if (liquid_syllabification){
-                    if ((old_ipa.slice(i, i+2) === 'l̩' || old_ipa.slice(i, i+2) === 'r̩') && (i+2===old_ipa.length||isPunctuationOrWhitespace(old_ipa.charAt(i+2))) && (i===0||isConsonant(old_ipa.charAt(i-1))) ){
+                if (liquid_syllabification) {
+                    if ((old_ipa.slice(i, i + 2) === 'l̩' || old_ipa.slice(i, i + 2) === 'r̩') && (i + 2 === old_ipa.length || isPunctuationOrWhitespace(old_ipa.charAt(i + 2))) && (i === 0 || isConsonant(old_ipa.charAt(i - 1)))) {
                         res += '<span style="color: #b0e0e2;">' + old_char + '</span>'
                         continue
                     }
@@ -208,8 +210,8 @@ $(() => {
 
                 }
 
-                if (unreleased){
-                    if (isStop(old_char) && (i + 1 === old_ipa.length || isStop(old_ipa.charAt(i+1)))){
+                if (unreleased) {
+                    if (isStop(old_char) && (i + 1 === old_ipa.length || isStop(old_ipa.charAt(i + 1)))) {
                         res += '<span style="color: #e2d6a3;">' + old_char + '̚' + '</span>'
                         continue
                     }
