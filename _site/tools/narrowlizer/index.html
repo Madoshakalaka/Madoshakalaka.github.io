@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Narrowlizer | Matt’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Narrowlizer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="give suggestions on narrowing English transcriptions" />
+<meta property="og:description" content="give suggestions on narrowing English transcriptions" />
+<link rel="canonical" href="http://localhost:4000/tools/narrowlizer/" />
+<meta property="og:url" content="http://localhost:4000/tools/narrowlizer/" />
+<meta property="og:site_name" content="Matt’s Blog" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/tools/narrowlizer/","headline":"Narrowlizer","description":"give suggestions on narrowing English transcriptions","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Matt's Blog" /><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9697924778042947",
+      enable_page_level_ads: true
+    });
+  </script>
+
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Matt&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/tools/">Tools</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Narrowlizer</h1>
+  </header>
+
+  <div class="post-content">
+    <html lang="en">
+
+<body>
+
+<script src="/narrowlizer.js"></script>
+
+
+<p>Narrowlize English transcriptions</p>
+
+
+<label>
+<textarea rows="5" cols="50" id="english" spellcheck="false">
+Matt likes noodles. Noodles are yummy.
+Patrick loves rice twice as much. Eighth.
+Rita needs multiple hidden rooms.
+Dubbed Muzzle flashes.
+</textarea>
+</label>
+
+<br><br>
+<button id="to-ipa">English to IPA</button>
+<span style="color: gray; font-size: 80%;">possible ambiguous IPA are separated by slash (/)</span>
+<br><br>
+
+
+<label>
+<textarea rows="5" cols="50" id="ipa" spellcheck="false">
+mæt laɪks nudɫz. nudɫz ɑɹ/ɚ jʌmi.
+pætɹɪk lʌvz ɹaɪs twaɪs æz/ɛz mʌtʃ. eitɵ/eiɵ.
+ɹiɾə/ɹɪɾə nidz mʌltəpl̩ hɪdn̩ ɹumz.
+dʌbd mʌzl̩ flæʃɪz.
+</textarea>
+</label>
+
+<br>
+
+
+<br>
+<button id="narrowlize">Narrowlize</button>
+<span style="color: gray; font-size: 80%;">give suggestions of possible production</span>
+<br><br>
+
+
+<label>
+    <input type="checkbox" id="raising" checked>
+</label> <span style="color: #2a7ae2">■</span> Canadian Raising <span style="color: gray; font-size: 80%;">/a/->/ə/ in diphthongs before voiceless consonants</span><br>
+<label>
+    <input type="checkbox" id="aspirated-stops" checked>
+</label> <span style="color: #8147e2">■</span> Aspiration <span style="color: gray; font-size: 80%;">voiceless stops (p, t, k) are aspirated at the beginning of a syllable</span><br>
+<label>
+    <input type="checkbox" id="devoicing" checked>
+</label> <span style="color: #e260ba">■</span> Devoicing <span style="color: gray; font-size: 80%;">approximants (w, j, l, ɹ) are voiceless after aspirated voiceless stops (p, t, k)</span><br>
+
+<label>
+    <input type="checkbox" id="nasalization" checked>
+</label> <span style="color: #e25f58">■</span> Nasalization <span style="color: gray; font-size: 80%;">vowels are nasalized before nasal consonants</span><br>
+
+<label>
+    <input type="checkbox" id="dentalization" checked>
+</label> <span style="color: #e2bc69">■</span> Dentalization <span style="color: gray; font-size: 80%;">Alveolar stops (t, d, n) become dentalized before dental consonants</span><br>
+
+<label>
+    <input type="checkbox" id="syllabification" checked>
+</label> <span style="color: #c0e26b">■</span> Syllabification <span style="color: gray; font-size: 80%;"> Nasals (m, n, ŋ) are syllabic word-finally following obstruents</span><br>
+
+<label>
+    <input type="checkbox" id="flapping" checked>
+</label> <span style="color: #77e26b">■</span> Flapping <span style="color: gray; font-size: 80%;"> Alveolar stops (t, d) become flaps between two vowels when the second vowel is stressless</span><br>
+
+<label>
+    <input type="checkbox" id="velarization" checked>
+</label> <span style="color: #5de2c3">■</span> Velarization <span style="color: gray; font-size: 80%;">  l is velarized at the end of a word or syllable following a vowel or before a consonant</span><br>
+
+<label>
+    <input type="checkbox" id="liquid-syllabification" checked>
+</label> <span style="color: #b0e0e2">■</span> Liquid Syllabification <span style="color: gray; font-size: 80%;">  Liquids (l, ɹ) are syllabic word-finally following other consonants</span><br>
+
+<label>
+    <input type="checkbox" id="unreleased-stop" checked>
+</label> <span style="color: #e2d6a3">■</span> Unreleased Stops <span style="color: gray; font-size: 80%;">  Stops are unreleased before other stops</span><br>
+
+
+<br>
+<p id="result">mæt l<span style="color: #2a7ae2;">ə</span>ɪks nud<span style="color: #5de2c3;">ɫ</span>z. nud<span
+        style="color: #5de2c3;">ɫ</span>z ɑɹ/ɚ j<span style="color: #e25f58;">ʌ̃</span>mi.<br>p<span
+        style="color: #8147e2;"><sup>h</sup></span>ætɹɪk lʌvz ɹ<span style="color: #2a7ae2;">ə</span>ɪs t<span
+        style="color: #8147e2;"><sup>h</sup></span><span style="color: #e260ba;">w̥</span><span style="color: #2a7ae2;">ə</span>ɪs
+    æz/ɛz mʌtʃ. ei<span style="color: #e2bc69;">t̪</span>ɵ/eiɵ.<br>ɹi<span style="color: #77e26b;">ɾ</span>ə/ɹɪ<span
+            style="color: #77e26b;">ɾ</span>ə nidz mʌ<span style="color: #5de2c3;">ɫ</span>təp<span
+            style="color: #b0e0e2;">l</span>̩ hɪd<span style="color: #c0e26b;">n</span>̩ ɹ<span style="color: #e25f58;">ũ</span>mz.<br>dʌ<span
+            style="color: #e2d6a3;">b̚</span>d mʌz<span style="color: #b0e0e2;">l</span>̩ flæʃɪz.<br></p>
+
+</body>
+</html>
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Matt&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Matt&#39;s Blog</li><li><a class="u-email" href="mailto:syan4@ualberta.ca">syan4@ualberta.ca</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Madoshakalaka"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Madoshakalaka</span></a></li><li><a href="https://www.linkedin.com/in/siyuan-matt-yan-2a764a183"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">Siyuan Yan</span></a></li><li><a href="https://www.twitter.com/MattYan26638978"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">Matt Yan</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Digging into stuff.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
