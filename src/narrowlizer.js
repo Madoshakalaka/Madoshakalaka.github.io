@@ -60,7 +60,7 @@ $(() => {
             $to_ipa.attr('disabled', true)
 
 
-            axios.get('http://edmontonhelp.com/phonetics', {
+            axios.get('https://edmontonhelp.com/phonetics', {
                 params: {text: $english.val().normalize('NFC')}
             })
                 .then((res) => {
