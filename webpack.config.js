@@ -1,9 +1,17 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/transdiff.js',
+    mode: "production",
+    entry: {
+        narrowlizer: './src/narrowlizer.js',
+        transdiff: './src/transdiff.js'
+    },
     output: {
-        filename: 'transdiff.js',
+
+        filename: '[name].js',
         path: path.resolve(__dirname),
     },
+    node:{
+        fs: 'empty'
+    }
 };
