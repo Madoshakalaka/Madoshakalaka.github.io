@@ -12,93 +12,95 @@ comments: true
 
 <body>
 
-<script src="/narrowlizer.js"></script>
+<img src="/assets/not_stonks.jpg" alt="not-stonks">
+
+<!--<script src="/narrowlizer.js"></script>-->
 
 
-<p>Narrowlize English transcriptions</p>
+<!--<p>Narrowlize English transcriptions</p>-->
 
 
-<label>
-<textarea rows="5" cols="50" id="english" spellcheck="false">
-Matt likes noodles. Noodles are yummy.
-Patrick loves rice twice as much. Eighth.
-Rita needs multiple hidden rooms.
-Dubbed Muzzle flashes.
-</textarea>
-</label>
+<!--<label>-->
+<!--<textarea rows="5" cols="50" id="english" spellcheck="false">-->
+<!--Matt likes noodles. Noodles are yummy.-->
+<!--Patrick loves rice twice as much. Eighth.-->
+<!--Rita needs multiple hidden rooms.-->
+<!--Dubbed Muzzle flashes.-->
+<!--</textarea>-->
+<!--</label>-->
 
-<br><br>
-<button id="to-ipa">English to IPA</button>
-<span style="color: gray; font-size: 80%;">possible ambiguous IPA are separated by slash (/)</span>
-<br><br>
-
-
-<label>
-<textarea rows="5" cols="50" id="ipa" spellcheck="false">
-mæt laɪks nudɫz. nudɫz ɑɹ/ɚ jʌmi.
-pætɹɪk lʌvz ɹaɪs twaɪs æz/ɛz mʌtʃ. eitɵ/eiɵ.
-ɹiɾə/ɹɪɾə nidz mʌltəpl̩ hɪdn̩ ɹumz.
-dʌbd mʌzl̩ flæʃɪz.
-</textarea>
-</label>
-
-<br>
+<!--<br><br>-->
+<!--<button id="to-ipa">English to IPA</button>-->
+<!--<span style="color: gray; font-size: 80%;">possible ambiguous IPA are separated by slash (/)</span>-->
+<!--<br><br>-->
 
 
-<br>
-<button id="narrowlize">Narrowlize</button>
-<span style="color: gray; font-size: 80%;">give suggestions of possible production</span>
-<br><br>
+<!--<label>-->
+<!--<textarea rows="5" cols="50" id="ipa" spellcheck="false">-->
+<!--mæt laɪks nudɫz. nudɫz ɑɹ/ɚ jʌmi.-->
+<!--pætɹɪk lʌvz ɹaɪs twaɪs æz/ɛz mʌtʃ. eitɵ/eiɵ.-->
+<!--ɹiɾə/ɹɪɾə nidz mʌltəpl̩ hɪdn̩ ɹumz.-->
+<!--dʌbd mʌzl̩ flæʃɪz.-->
+<!--</textarea>-->
+<!--</label>-->
+
+<!--<br>-->
 
 
-<label>
-    <input type="checkbox" id="raising" checked>
-</label> <span style="color: #2a7ae2">■</span> Canadian Raising <span style="color: gray; font-size: 80%;">/a/->/ə/ in diphthongs before voiceless consonants</span><br>
-<label>
-    <input type="checkbox" id="aspirated-stops" checked>
-</label> <span style="color: #8147e2">■</span> Aspiration <span style="color: gray; font-size: 80%;">voiceless stops (p, t, k) are aspirated at the beginning of a syllable</span><br>
-<label>
-    <input type="checkbox" id="devoicing" checked>
-</label> <span style="color: #e260ba">■</span> Devoicing <span style="color: gray; font-size: 80%;">approximants (w, j, l, ɹ) are voiceless after aspirated voiceless stops (p, t, k)</span><br>
-
-<label>
-    <input type="checkbox" id="nasalization" checked>
-</label> <span style="color: #e25f58">■</span> Nasalization <span style="color: gray; font-size: 80%;">vowels are nasalized before nasal consonants</span><br>
-
-<label>
-    <input type="checkbox" id="dentalization" checked>
-</label> <span style="color: #e2bc69">■</span> Dentalization <span style="color: gray; font-size: 80%;">Alveolar stops (t, d, n) become dentalized before dental consonants</span><br>
-
-<label>
-    <input type="checkbox" id="syllabification" checked>
-</label> <span style="color: #c0e26b">■</span> Syllabification <span style="color: gray; font-size: 80%;"> Nasals (m, n, ŋ) are syllabic word-finally following obstruents</span><br>
-
-<label>
-    <input type="checkbox" id="flapping" checked>
-</label> <span style="color: #77e26b">■</span> Flapping <span style="color: gray; font-size: 80%;"> Alveolar stops (t, d) become flaps between two vowels when the second vowel is stressless</span><br>
-
-<label>
-    <input type="checkbox" id="velarization" checked>
-</label> <span style="color: #5de2c3">■</span> Velarization <span style="color: gray; font-size: 80%;">  l is velarized at the end of a word or syllable following a vowel or before a consonant</span><br>
-
-<label>
-    <input type="checkbox" id="liquid-syllabification" checked>
-</label> <span style="color: #b0e0e2">■</span> Liquid Syllabification <span style="color: gray; font-size: 80%;">  Liquids (l, ɹ) are syllabic word-finally following other consonants</span><br>
-
-<label>
-    <input type="checkbox" id="unreleased-stop" checked>
-</label> <span style="color: #e2d6a3">■</span> Unreleased Stops <span style="color: gray; font-size: 80%;">  Stops are unreleased before other stops</span><br>
+<!--<br>-->
+<!--<button id="narrowlize">Narrowlize</button>-->
+<!--<span style="color: gray; font-size: 80%;">give suggestions of possible production</span>-->
+<!--<br><br>-->
 
 
-<br>
-<p id="result">mæt l<span style="color: #2a7ae2;">ə</span>ɪks nud<span style="color: #5de2c3;">ɫ</span>z. nud<span
-        style="color: #5de2c3;">ɫ</span>z ɑɹ/ɚ j<span style="color: #e25f58;">ʌ̃</span>mi.<br>p<span
-        style="color: #8147e2;"><sup>h</sup></span>ætɹɪk lʌvz ɹ<span style="color: #2a7ae2;">ə</span>ɪs t<span
-        style="color: #8147e2;"><sup>h</sup></span><span style="color: #e260ba;">w̥</span><span style="color: #2a7ae2;">ə</span>ɪs
-    æz/ɛz mʌtʃ. ei<span style="color: #e2bc69;">t̪</span>ɵ/eiɵ.<br>ɹi<span style="color: #77e26b;">ɾ</span>ə/ɹɪ<span
-            style="color: #77e26b;">ɾ</span>ə nidz mʌ<span style="color: #5de2c3;">ɫ</span>təp<span
-            style="color: #b0e0e2;">l</span>̩ hɪd<span style="color: #c0e26b;">n</span>̩ ɹ<span style="color: #e25f58;">ũ</span>mz.<br>dʌ<span
-            style="color: #e2d6a3;">b̚</span>d mʌz<span style="color: #b0e0e2;">l</span>̩ flæʃɪz.<br></p>
+<!--<label>-->
+<!--    <input type="checkbox" id="raising" checked>-->
+<!--</label> <span style="color: #2a7ae2">■</span> Canadian Raising <span style="color: gray; font-size: 80%;">/a/->/ə/ in diphthongs before voiceless consonants</span><br>-->
+<!--<label>-->
+<!--    <input type="checkbox" id="aspirated-stops" checked>-->
+<!--</label> <span style="color: #8147e2">■</span> Aspiration <span style="color: gray; font-size: 80%;">voiceless stops (p, t, k) are aspirated at the beginning of a syllable</span><br>-->
+<!--<label>-->
+<!--    <input type="checkbox" id="devoicing" checked>-->
+<!--</label> <span style="color: #e260ba">■</span> Devoicing <span style="color: gray; font-size: 80%;">approximants (w, j, l, ɹ) are voiceless after aspirated voiceless stops (p, t, k)</span><br>-->
+
+<!--<label>-->
+<!--    <input type="checkbox" id="nasalization" checked>-->
+<!--</label> <span style="color: #e25f58">■</span> Nasalization <span style="color: gray; font-size: 80%;">vowels are nasalized before nasal consonants</span><br>-->
+
+<!--<label>-->
+<!--    <input type="checkbox" id="dentalization" checked>-->
+<!--</label> <span style="color: #e2bc69">■</span> Dentalization <span style="color: gray; font-size: 80%;">Alveolar stops (t, d, n) become dentalized before dental consonants</span><br>-->
+
+<!--<label>-->
+<!--    <input type="checkbox" id="syllabification" checked>-->
+<!--</label> <span style="color: #c0e26b">■</span> Syllabification <span style="color: gray; font-size: 80%;"> Nasals (m, n, ŋ) are syllabic word-finally following obstruents</span><br>-->
+
+<!--<label>-->
+<!--    <input type="checkbox" id="flapping" checked>-->
+<!--</label> <span style="color: #77e26b">■</span> Flapping <span style="color: gray; font-size: 80%;"> Alveolar stops (t, d) become flaps between two vowels when the second vowel is stressless</span><br>-->
+
+<!--<label>-->
+<!--    <input type="checkbox" id="velarization" checked>-->
+<!--</label> <span style="color: #5de2c3">■</span> Velarization <span style="color: gray; font-size: 80%;">  l is velarized at the end of a word or syllable following a vowel or before a consonant</span><br>-->
+
+<!--<label>-->
+<!--    <input type="checkbox" id="liquid-syllabification" checked>-->
+<!--</label> <span style="color: #b0e0e2">■</span> Liquid Syllabification <span style="color: gray; font-size: 80%;">  Liquids (l, ɹ) are syllabic word-finally following other consonants</span><br>-->
+
+<!--<label>-->
+<!--    <input type="checkbox" id="unreleased-stop" checked>-->
+<!--</label> <span style="color: #e2d6a3">■</span> Unreleased Stops <span style="color: gray; font-size: 80%;">  Stops are unreleased before other stops</span><br>-->
+
+
+<!--<br>-->
+<!--<p id="result">mæt l<span style="color: #2a7ae2;">ə</span>ɪks nud<span style="color: #5de2c3;">ɫ</span>z. nud<span-->
+<!--        style="color: #5de2c3;">ɫ</span>z ɑɹ/ɚ j<span style="color: #e25f58;">ʌ̃</span>mi.<br>p<span-->
+<!--        style="color: #8147e2;"><sup>h</sup></span>ætɹɪk lʌvz ɹ<span style="color: #2a7ae2;">ə</span>ɪs t<span-->
+<!--        style="color: #8147e2;"><sup>h</sup></span><span style="color: #e260ba;">w̥</span><span style="color: #2a7ae2;">ə</span>ɪs-->
+<!--    æz/ɛz mʌtʃ. ei<span style="color: #e2bc69;">t̪</span>ɵ/eiɵ.<br>ɹi<span style="color: #77e26b;">ɾ</span>ə/ɹɪ<span-->
+<!--            style="color: #77e26b;">ɾ</span>ə nidz mʌ<span style="color: #5de2c3;">ɫ</span>təp<span-->
+<!--            style="color: #b0e0e2;">l</span>̩ hɪd<span style="color: #c0e26b;">n</span>̩ ɹ<span style="color: #e25f58;">ũ</span>mz.<br>dʌ<span-->
+<!--            style="color: #e2d6a3;">b̚</span>d mʌz<span style="color: #b0e0e2;">l</span>̩ flæʃɪz.<br></p>-->
 
 </body>
 </html>
