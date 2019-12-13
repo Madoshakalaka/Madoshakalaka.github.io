@@ -1,6 +1,6 @@
 const $ = require('jquery')
 
-const lookup = {'3':['3_a', '3_b'], '5':['5a', '5b'], '20': ['20a', '20b']}
+const lookup = {'3':['3_a', '3_b', '3c'], '5':['5a', '5b'], '20': ['20a', '20b']}
 
 $(() => {
     $show = $('#show')
