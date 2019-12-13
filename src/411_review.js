@@ -27,7 +27,7 @@ $(() => {
         let proofs = []
 
         if (xx.toString() in lookup){
-            proofs.push(...lookup[v.toString()])
+            proofs.push(...lookup[xx.toString()])
         }
         else{
             proofs = [xx.toString()]
