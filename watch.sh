@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-$(npm bin)/webpack --watch &
+npx webpack --watch &
 
 bundle exec jekyll serve &
 

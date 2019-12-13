@@ -4,7 +4,8 @@ module.exports = {
     mode: "production",
     entry: {
         narrowlizer: './src/narrowlizer.js',
-        transdiff: './src/transdiff.js'
+        transdiff: './src/transdiff.js',
+        "411_review": './src/411_review.js'
     },
     output: {
 
