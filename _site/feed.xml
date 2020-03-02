@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-02T12:45:58-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matt’s Blog</title><subtitle>Digging into stuff.</subtitle><entry><title type="html">Remap keys for specific device on ubuntu</title><link href="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html" rel="alternate" type="text/html" title="Remap keys for specific device on ubuntu" /><published>2019-09-25T00:47:00-06:00</published><updated>2019-09-25T00:47:00-06:00</updated><id>http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html">&lt;p&gt;People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-02T12:56:59-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matt’s Blog</title><subtitle>Digging into stuff.</subtitle><entry><title type="html">Remap keys for specific device on ubuntu</title><link href="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html" rel="alternate" type="text/html" title="Remap keys for specific device on ubuntu" /><published>2019-09-25T00:47:00-06:00</published><updated>2019-09-25T00:47:00-06:00</updated><id>http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html">&lt;p&gt;People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.&lt;/p&gt;
 
 &lt;p&gt;Time to lay out all your spare keypads and keyboards and build your self a real hacker console. (or play the piano)&lt;/p&gt;
 
@@ -218,7 +218,7 @@ else
 
 &lt;p&gt;If you are familiar with Python. Check &lt;a href=&quot;https://pypi.org/project/PyAutoGUI/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyautogui&lt;/code&gt;&lt;/a&gt; 
 &lt;a href=&quot;https://pypi.org/project/pynput/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pynput&lt;/code&gt;&lt;/a&gt;
- &lt;a href=&quot;https://pyahk.readthedocs.io/en/latest/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyahk&lt;/code&gt;&lt;/a&gt;, they can substitute &lt;code class=&quot;highlighter-rouge&quot;&gt;xdotools&lt;/code&gt; if shell scripts are not your thing.&lt;/p&gt;</content><author><name></name></author><summary type="html">People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.</summary></entry><entry><title type="html">Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)</title><link href="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html" rel="alternate" type="text/html" title="Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)" /><published>2019-03-02T11:13:00-07:00</published><updated>2019-03-02T11:13:00-07:00</updated><id>http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions</id><content type="html" xml:base="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html">&lt;p&gt;You are a python expert and you know some math.&lt;/p&gt;
+ &lt;a href=&quot;https://pyahk.readthedocs.io/en/latest/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyahk&lt;/code&gt;&lt;/a&gt;, they can substitute &lt;code class=&quot;highlighter-rouge&quot;&gt;xdotools&lt;/code&gt; if shell scripts are not your thing.&lt;/p&gt;</content><author><name></name></author><summary type="html">People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.</summary></entry><entry><title type="html">Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)</title><link href="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html" rel="alternate" type="text/html" title="Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)" /><published>2019-03-02T11:13:00-07:00</published><updated>2019-03-02T11:13:00-07:00</updated><id>http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions</id><content type="html" xml:base="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html">&lt;p&gt;You are a Python expert and you know some math.&lt;/p&gt;
 
 &lt;p&gt;So when people ask u,&lt;/p&gt;
 
@@ -234,9 +234,12 @@ else
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;But what if one day your best friend decides to ask you&lt;/p&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;“Matt how do I compute the 5-dimensional normal vector to this 4-dimensional hyperplane embedded in 5 dimensional ambient space?”&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;What would you do?&lt;/p&gt;
 
 &lt;p&gt;Well, unfortunately I’m Matt and my Math major friend asked me to do exactly that.&lt;/p&gt;
 
@@ -292,4 +295,13 @@ else
   &lt;span class=&quot;n&quot;&gt;unit_normal_vector_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unit_normal_vector_1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">You are a python expert and you know some math.</summary></entry></feed>
+  &lt;li&gt;
+    &lt;p&gt;The code doesn’t run&lt;/p&gt;
+
+    &lt;p&gt;the function definition part of the code used “typing annotation” &lt;code class=&quot;highlighter-rouge&quot;&gt;: np.ndarray&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;-&amp;gt; List[float]&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;do &lt;code class=&quot;highlighter-rouge&quot;&gt;from typing import List&lt;/code&gt; on Python &amp;gt;=3.5 before the function&lt;/p&gt;
+
+    &lt;p&gt;or delete them on lower Python versions&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">You are a Python expert and you know some math.</summary></entry></feed>

@@ -79,4 +79,11 @@ def generalized_cross_product(vectors: np.ndarray) -> List[float]:
     unit_normal_vector_2 = - unit_normal_vector_1
     ```
 
+- The code doesn't run
+
+    the function definition part of the code used "typing annotation" `: np.ndarray` and `-> List[float]`
+    
+    do `from typing import List` on Python >=3.5 before the function
+    
+    or delete them on lower Python versions
     

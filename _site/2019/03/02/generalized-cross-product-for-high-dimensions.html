@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="You are a python expert and you know some math." />
-<meta property="og:description" content="You are a python expert and you know some math." />
+<meta name="description" content="You are a Python expert and you know some math." />
+<meta property="og:description" content="You are a Python expert and you know some math." />
 <link rel="canonical" href="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html" />
 <meta property="og:url" content="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html" />
 <meta property="og:site_name" content="Matt’s Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-03-02T11:13:00-07:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html","headline":"Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)","datePublished":"2019-03-02T11:13:00-07:00","dateModified":"2019-03-02T11:13:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html"},"description":"You are a python expert and you know some math.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","url":"http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html","headline":"Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)","datePublished":"2019-03-02T11:13:00-07:00","dateModified":"2019-03-02T11:13:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html"},"description":"You are a Python expert and you know some math.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Matt's Blog" /><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -54,7 +54,7 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>You are a python expert and you know some math.</p>
+    <p>You are a Python expert and you know some math.</p>
 
 <p>So when people ask u,</p>
 
@@ -70,9 +70,12 @@
 </code></pre></div></div>
 
 <p>But what if one day your best friend decides to ask you</p>
+
 <blockquote>
   <p>“Matt how do I compute the 5-dimensional normal vector to this 4-dimensional hyperplane embedded in 5 dimensional ambient space?”</p>
 </blockquote>
+
+<p>What would you do?</p>
 
 <p>Well, unfortunately I’m Matt and my Math major friend asked me to do exactly that.</p>
 
@@ -127,6 +130,15 @@
   <span class="n">unit_normal_vector_1</span> <span class="o">=</span> <span class="n">normal_vector</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">normal_vector</span><span class="p">)</span>
   <span class="n">unit_normal_vector_2</span> <span class="o">=</span> <span class="o">-</span> <span class="n">unit_normal_vector_1</span>
 </code></pre></div>    </div>
+  </li>
+  <li>
+    <p>The code doesn’t run</p>
+
+    <p>the function definition part of the code used “typing annotation” <code class="highlighter-rouge">: np.ndarray</code> and <code class="highlighter-rouge">-&gt; List[float]</code></p>
+
+    <p>do <code class="highlighter-rouge">from typing import List</code> on Python &gt;=3.5 before the function</p>
+
+    <p>or delete them on lower Python versions</p>
   </li>
 </ul>
 
