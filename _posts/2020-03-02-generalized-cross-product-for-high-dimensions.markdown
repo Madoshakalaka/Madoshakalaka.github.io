@@ -64,7 +64,7 @@ def generalized_cross_product(vectors: np.ndarray) -> List[float]:
     
     well, if you want to compute the normal vector of a _x_-dimensional hyperplane embedded in _x+1_ dimensional ambient space: 
     first, you gotta find _x_ number of vectors on that plane (or equivalently find _x+1_ number of not collinear _x+1_ dimensional points on the plane and subtract them to get vectors).
-    The pass in each plane vector as a row in the argument to `generalized_cross_product`
+    Then pass in each plane vector as a row in the argument to `generalized_cross_product`
     
 - Aren't there many normal vectors, and unit normal vector?
 
