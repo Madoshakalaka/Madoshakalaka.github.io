@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-12-22T21:33:41-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matt’s Blog</title><subtitle>Digging into stuff.</subtitle><entry><title type="html">Remap keys for specific device on ubuntu</title><link href="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html" rel="alternate" type="text/html" title="Remap keys for specific device on ubuntu" /><published>2019-09-25T00:47:00-06:00</published><updated>2019-09-25T00:47:00-06:00</updated><id>http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html">&lt;p&gt;People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-02T12:41:42-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Matt’s Blog</title><subtitle>Digging into stuff.</subtitle><entry><title type="html">Remap keys for specific device on ubuntu</title><link href="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html" rel="alternate" type="text/html" title="Remap keys for specific device on ubuntu" /><published>2019-09-25T00:47:00-06:00</published><updated>2019-09-25T00:47:00-06:00</updated><id>http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2019/09/25/remap-keys-for-specific-device-on-ubuntu.html">&lt;p&gt;People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.&lt;/p&gt;
 
 &lt;p&gt;Time to lay out all your spare keypads and keyboards and build your self a real hacker console. (or play the piano)&lt;/p&gt;
 
@@ -218,4 +218,78 @@ else
 
 &lt;p&gt;If you are familiar with Python. Check &lt;a href=&quot;https://pypi.org/project/PyAutoGUI/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyautogui&lt;/code&gt;&lt;/a&gt; 
 &lt;a href=&quot;https://pypi.org/project/pynput/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pynput&lt;/code&gt;&lt;/a&gt;
- &lt;a href=&quot;https://pyahk.readthedocs.io/en/latest/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyahk&lt;/code&gt;&lt;/a&gt;, they can substitute &lt;code class=&quot;highlighter-rouge&quot;&gt;xdotools&lt;/code&gt; if shell scripts are not your thing.&lt;/p&gt;</content><author><name></name></author><summary type="html">People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.</summary></entry></feed>
+ &lt;a href=&quot;https://pyahk.readthedocs.io/en/latest/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pyahk&lt;/code&gt;&lt;/a&gt;, they can substitute &lt;code class=&quot;highlighter-rouge&quot;&gt;xdotools&lt;/code&gt; if shell scripts are not your thing.&lt;/p&gt;</content><author><name></name></author><summary type="html">People love programmable peripherals. Yet few may know one can easily make any keyboad/keypad programmable on Ubuntu.</summary></entry><entry><title type="html">Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)</title><link href="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html" rel="alternate" type="text/html" title="Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)" /><published>2019-03-02T11:13:00-07:00</published><updated>2019-03-02T11:13:00-07:00</updated><id>http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions</id><content type="html" xml:base="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html">&lt;p&gt;You are a python expert and you know some math.&lt;/p&gt;
+
+&lt;p&gt;So when people ask u,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Matt how do I compute a vector perpendicular to these two vectors?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can just toss this one liner around:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cross&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But what if one day your best friend decides to ask you&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“Matt how do I compute the 5-dimensional normal vector to this 4-dimensional hyperplane embedded in 5 dimensional ambient space?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, unfortunately I’m Matt and my Math major friend asked me to do exactly that.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;At this point you must be thinking, “isn’t numpy able to do that?”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nope, &lt;code class=&quot;highlighter-rouge&quot;&gt;np.cross&lt;/code&gt; raises fucking &lt;code class=&quot;highlighter-rouge&quot;&gt;ValueError&lt;/code&gt; when you pass in vectors of dimension not equal to 2 or 3.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;the-formula&quot;&gt;The Formula&lt;/h2&gt;
+
+&lt;p&gt;Here is the formula of 4 dimensional cross product (vectors are 4 dimensional)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/four-dim-cross.png&quot; alt=&quot;formula for 4 dimensional cross product&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s basically it, high dimensional ones generalize similarly.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-code-for-arbitrary-dimension&quot;&gt;The Code (for arbitrary dimension)&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;generalized_cross_product&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vectors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ndarray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# make sure you pass in a rectangular matrix&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# each row is a x dimensional vector&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;dim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vectors&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;ej&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dim&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;ej&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;det&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vstack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vectors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ej&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;mega-confusion---gotchas&quot;&gt;Mega Confusion ? / Gotchas&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;still, how to compute normal vectors of an hyperplane?&lt;/p&gt;
+
+    &lt;p&gt;well, if you want to compute the normal vector of a &lt;em&gt;x&lt;/em&gt;-dimensional hyperplane embedded in &lt;em&gt;x+1&lt;/em&gt; dimensional ambient space: 
+  first, you gotta find &lt;em&gt;x&lt;/em&gt; number of vectors on that plane (or equivalently find &lt;em&gt;x+1&lt;/em&gt; number of not collinear &lt;em&gt;x+1&lt;/em&gt; dimensional points on the plane and subtract them to get vectors).
+  The pass in each plane vector as a row in the argument to &lt;code class=&quot;highlighter-rouge&quot;&gt;generalized_cross_product&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Aren’t there many normal vectors, and unit normal vector?&lt;/p&gt;
+
+    &lt;p&gt;A hyperplane divides the space to two divisions and it’s only got 2 unique unit normal vectors of the opposite directions. To get
+  the unit normal vector:&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;n&quot;&gt;normal_vector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generalized_cross_product&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plane_vectors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;unit_normal_vector_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;normal_vector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linalg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normal_vector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;unit_normal_vector_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unit_normal_vector_1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">You are a python expert and you know some math.</summary></entry></feed>

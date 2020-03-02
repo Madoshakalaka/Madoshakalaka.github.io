@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors) | Matt’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="You are a python expert and you know some math." />
+<meta property="og:description" content="You are a python expert and you know some math." />
+<link rel="canonical" href="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html" />
+<meta property="og:url" content="http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html" />
+<meta property="og:site_name" content="Matt’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-03-02T11:13:00-07:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html","headline":"Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)","datePublished":"2019-03-02T11:13:00-07:00","dateModified":"2019-03-02T11:13:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/03/02/generalized-cross-product-for-high-dimensions.html"},"description":"You are a python expert and you know some math.","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Matt's Blog" /><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9697924778042947",
+      enable_page_level_ads: true
+    });
+  </script>
+
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Matt&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/tools/">Tools</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Generalized Cross Product for High Dimensions in Python (or how to compute high dimensional normal vectors)</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-03-02T11:13:00-07:00" itemprop="datePublished">Mar 2, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>You are a python expert and you know some math.</p>
+
+<p>So when people ask u,</p>
+
+<blockquote>
+  <p>“Matt how do I compute a vector perpendicular to these two vectors?”</p>
+</blockquote>
+
+<p>You can just toss this one liner around:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>But what if one day your best friend decides to ask you</p>
+<blockquote>
+  <p>“Matt how do I compute the 5-dimensional normal vector to this 4-dimensional hyperplane embedded in 5 dimensional ambient space?”</p>
+</blockquote>
+
+<p>Well, unfortunately I’m Matt and my Math major friend asked me to do exactly that.</p>
+
+<blockquote>
+  <p>At this point you must be thinking, “isn’t numpy able to do that?”.</p>
+</blockquote>
+
+<blockquote>
+  <p>Nope, <code class="highlighter-rouge">np.cross</code> raises fucking <code class="highlighter-rouge">ValueError</code> when you pass in vectors of dimension not equal to 2 or 3.</p>
+</blockquote>
+
+<h2 id="the-formula">The Formula</h2>
+
+<p>Here is the formula of 4 dimensional cross product (vectors are 4 dimensional)</p>
+
+<p><img src="/assets/four-dim-cross.png" alt="formula for 4 dimensional cross product" /></p>
+
+<p>That’s basically it, high dimensional ones generalize similarly.</p>
+
+<h2 id="the-code-for-arbitrary-dimension">The Code (for arbitrary dimension)</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">generalized_cross_product</span><span class="p">(</span><span class="n">vectors</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
+    <span class="c"># make sure you pass in a rectangular matrix</span>
+    <span class="c"># each row is a x dimensional vector</span>
+    
+    <span class="n">dim</span> <span class="o">=</span> <span class="n">vectors</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dim</span><span class="p">):</span>
+        <span class="n">ej</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">dim</span>
+        <span class="n">ej</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">([</span><span class="n">vectors</span><span class="p">,</span> <span class="n">ej</span><span class="p">])))</span>
+    <span class="k">return</span> <span class="n">res</span>
+</code></pre></div></div>
+
+<h2 id="mega-confusion---gotchas">Mega Confusion ? / Gotchas</h2>
+
+<ul>
+  <li>
+    <p>still, how to compute normal vectors of an hyperplane?</p>
+
+    <p>well, if you want to compute the normal vector of a <em>x</em>-dimensional hyperplane embedded in <em>x+1</em> dimensional ambient space: 
+  first, you gotta find <em>x</em> number of vectors on that plane (or equivalently find <em>x+1</em> number of not collinear <em>x+1</em> dimensional points on the plane and subtract them to get vectors).
+  The pass in each plane vector as a row in the argument to <code class="highlighter-rouge">generalized_cross_product</code></p>
+  </li>
+  <li>
+    <p>Aren’t there many normal vectors, and unit normal vector?</p>
+
+    <p>A hyperplane divides the space to two divisions and it’s only got 2 unique unit normal vectors of the opposite directions. To get
+  the unit normal vector:</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">normal_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">generalized_cross_product</span><span class="p">(</span><span class="n">plane_vectors</span><span class="p">))</span>
+  <span class="n">unit_normal_vector_1</span> <span class="o">=</span> <span class="n">normal_vector</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">normal_vector</span><span class="p">)</span>
+  <span class="n">unit_normal_vector_2</span> <span class="o">=</span> <span class="o">-</span> <span class="n">unit_normal_vector_1</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+
+  </div>
+
+  
+    
+  
+
+  <a class="u-url" href="/2019/03/02/generalized-cross-product-for-high-dimensions.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Matt&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Matt&#39;s Blog</li><li><a class="u-email" href="mailto:syan4@ualberta.ca">syan4@ualberta.ca</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Madoshakalaka"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Madoshakalaka</span></a></li><li><a href="https://www.linkedin.com/in/siyuan-matt-yan-2a764a183"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">Siyuan Yan</span></a></li><li><a href="https://www.twitter.com/MattYan26638978"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">Matt Yan</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Digging into stuff.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
