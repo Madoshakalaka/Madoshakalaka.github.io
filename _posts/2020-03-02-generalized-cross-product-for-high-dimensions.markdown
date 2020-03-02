@@ -6,7 +6,7 @@ comments: true
 ---
 
 
-You are a python expert and you know some math.
+You are a Python expert and you know some math.
 
 So when people ask u, 
 
@@ -22,8 +22,10 @@ array([0, 0, 1])
 
 
 But what if one day your best friend decides to ask you
+
  > "Matt how do I compute the 5-dimensional normal vector to this 4-dimensional hyperplane embedded in 5 dimensional ambient space?"
 
+What would you do?
 
 Well, unfortunately I'm Matt and my Math major friend asked me to do exactly that.
 
