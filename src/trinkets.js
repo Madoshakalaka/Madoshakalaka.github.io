@@ -131,7 +131,7 @@ $(() => {
         dom: 'Prtip'
     })
 
-    $("#effect-input").keyup(function (){
+    $("#effect-input").on("keyup change",function (){
         const titleCaseValue = titleCase(this.value)
         if (sortCriteria.includes(titleCaseValue)) {
             selectedStat = titleCaseValue
@@ -147,7 +147,7 @@ $(() => {
         }
     })
 
-    $('th').each(function(i){
+    $('th').each(function(){
 
         // console.log(this.html())
         const propName = displayNameToProp[this.innerHTML]

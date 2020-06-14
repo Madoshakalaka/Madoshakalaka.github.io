@@ -1,0 +1,1812 @@
+{
+  "Accuracy Stone": {
+    "Acc": 4,
+    "Spd": -1
+  },
+  "Bleed Charm": {
+    "Bleed Resist": "0.20",
+    "Dodge": -2
+  },
+  "Bleed Stone": {
+    "Bleed Skill Chance": "0.15",
+    "Spd": -1
+  },
+  "Blight Charm": {
+    "Blight Resist": "0.20",
+    "Dodge": -2
+  },
+  "Blight Stone": {
+    "Blight Skill Chance": "0.15",
+    "Spd": -1
+  },
+  "Critical Stone": {
+    "Crit": "0.03",
+    "Spd": -1
+  },
+  "Debuff Charm": {
+    "Debuff Resist": "0.20",
+    "Dodge": -2
+  },
+  "Debuff Stone": {
+    "Debuff Skill Chance": "0.15",
+    "Spd": -1
+  },
+  "Disease Charm": {
+    "Disease Resist": "0.20",
+    "Dodge": -2
+  },
+  "Dodge Stone": {
+    "Dodge": 4,
+    "Spd": -1
+  },
+  "Health Stone": {
+    "Max Hp": "0.15",
+    "Spd": -1
+  },
+  "Move Charm": {
+    "Move Resist": "0.20",
+    "Spd": -1
+  },
+  "Move Stone": {
+    "Move Skill Chance": "0.15",
+    "Spd": -1
+  },
+  "Protection Stone": {
+    "Prot": "0.05",
+    "Spd": -1
+  },
+  "Stun Charm": {
+    "Stun Resist": "0.20",
+    "Dodge": -2
+  },
+  "Stun Stone": {
+    "Stun Skill Chance": "0.10",
+    "Spd": -1
+  },
+  "Archer's Ring": {
+    "Acc": 5,
+    "Spd": -1
+  },
+  "Bloodied Fetish": {
+    "Blight Resist": "0.20",
+    "Bleed Resist": "0.20",
+    "Disease Resist": "-0.20"
+  },
+  "Book of Intuition": {
+    "Chance Party Surprised": "-0.20",
+    "Spd": -1
+  },
+  "Caution Cloak": {
+    "Scouting Chance": "0.10",
+    "Spd": -10
+  },
+  "Damage Stone": {
+    "Dmg": "0.10",
+    "Dodge": -4
+  },
+  "Dazzling Charm": {
+    "Stun Skill Chance": "0.10"
+  },
+  "Deteriorating Bracer": {
+    "Dodge": 4
+  },
+  "Reckless Charm": {
+    "Acc": 5,
+    "Dodge": -2
+  },
+  "Slippery Boots": {
+    "Dodge": 4,
+    "Move Resist": "-0.20"
+  },
+  "Snake Oil": {
+    "Stress": "-0.10"
+  },
+  "Speed Stone": {
+    "Spd": 1
+  },
+  "Survival Guide": {
+    "Scouting Chance": "0.10",
+    "Trap Disarm Chance": "0.10",
+    "Spd": -1
+  },
+  "Warrior's Bracer": {
+    "Dmg": "0.10",
+    "Dodge": -4
+  },
+  "Warrior's Cap": {
+    "Acc": 5
+  },
+  "Bleed Amulet": {
+    "Bleed Skill Chance": "0.20",
+    "Bleed Resist": "0.20",
+    "Blight Resist": "-0.20"
+  },
+  "Blight Amulet": {
+    "Blight Skill Chance": "0.20",
+    "Blight Resist": "0.20",
+    "Bleed Resist": "-0.20"
+  },
+  "Blood Charm": {
+    "Bleed Resist": "0.30"
+  },
+  "Bloodthirst Ring": {
+    "Food Consumed": "-1.00",
+    "Max Hp": "0.10",
+    "Healing Received": "-0.25"
+  },
+  "Book of Constitution": {
+    "Blight Resist": "0.30",
+    "Disease Resist": "0.30",
+    "Spd": -1
+  },
+  "Book of Holiness": {
+    "Stress": "-0.20",
+    "Death Blow Resist": "-0.10"
+  },
+  "Book of Rage": {
+    "Dmg": "0.20",
+    "Crit": "0.08",
+    "Bleed Resist": "-0.10",
+    "Blight Resist": "-0.10"
+  },
+  "Book of Relaxation": {
+    "Stress": "-0.10",
+    "Acc": 4,
+    "Dodge": -4
+  },
+  "Camouflage Cloak": {
+    "Dodge": 15,
+    "Stun Resist": "-0.20"
+  },
+  "Calming Crystal": {
+    "Stress": "-0.15",
+    "Spd": -1
+  },
+  "Chirurgeon's Charm": {
+    "Healing Skills": "0.15"
+  },
+  "Dark Bracer": {
+    "Crit": "0.08",
+    "Dodge": 5,
+    "Dmg": "-0.10"
+  },
+  "Debuff Amulet": {
+    "Debuff Skill Chance": "0.30",
+    "Debuff Resist": "0.30",
+    "Dodge": -4
+  },
+  "Gambler's Charm": {
+    "Max Hp": "0.15",
+    "Death Blow Resist": "-0.10"
+  },
+  "Heavy Boots": {
+    "Move Resist": "0.40",
+    "Prot": "0.20",
+    "Spd": -2
+  },
+  "Life Crystal": {
+    "Max Hp": "0.20",
+    "Spd": -1
+  },
+  "Move Amulet": {
+    "Move Skill Chance": "0.20",
+    "Move Resist": "0.30",
+    "Debuff Resist": "-0.10"
+  },
+  "Seer Stone": {
+    "Scouting Chance": "0.15",
+    "Spd": -1
+  },
+  "Shimmering Cloak": {
+    "Dodge": 8,
+    "Healing Received": "-0.33"
+  },
+  "Solar Bracer": {
+    "Crit": "0.04-0.05",
+    "Dodge": -1
+  },
+  "Steady Bracer": {
+    "Acc": 10,
+    "Dodge": -2
+  },
+  "Stun Amulet": {
+    "Stun Skill Chance": "0.10",
+    "Stun Resist": "0.20",
+    "Dodge": -4
+  },
+  "Surgical Gloves": {
+    "Crit": "0.08",
+    "Acc": 5,
+    "Move Resist": "-0.20",
+    "Debuff Resist": "-0.10"
+  },
+  "Swift Cloak": {
+    "Spd": 2,
+    "Move Resist": "-0.20"
+  },
+  "Tenacity Ring": {
+    "Death Blow Resist": "0.10",
+    "Dodge": 5,
+    "Crit": "-0.05"
+  },
+  "Worrystone": {
+    "Virtue Chance": "0.10",
+    "Stress": "-0.10",
+    "Spd": -1
+  },
+  "Beast Slayer's Ring": {
+    "Dmg": "0.25",
+    "Dodge": -8
+  },
+  "Berserk Charm": {
+    "Spd": 3,
+    "Dmg": "0.15",
+    "Stress": "0.15",
+    "Acc": -5,
+    "Virtue Chance": "-0.10"
+  },
+  "Brawler's Gloves": {
+    "Dmg": "0.25",
+    "Crit": "-0.05",
+    "Spd": -1
+  },
+  "Dark Crown": {
+    "Stress": "-0.25",
+    "Virtue Chance": "0.15"
+  },
+  "Eldritch Slayer's Ring": {
+    "Dmg": "0.25",
+    "Dodge": -8
+  },
+  "Fasting Seal": {
+    "Food Consumed": "-1.00",
+    "Dmg": "-1.00",
+    "Dodge": 5
+  },
+  "Feather Crystal": {
+    "Spd": 2,
+    "Dodge": 8,
+    "Stun Resist": "-0.20",
+    "Move Resist": "-0.20"
+  },
+  "Man Slayer's Ring": {
+    "Dmg": "0.25",
+    "Dodge": -8
+  },
+  "Moon Cloak": {
+    "Prot": "0.15",
+    "Dodge": 10,
+    "Stress": "0.10"
+  },
+  "Moon Ring": {
+    "Dmg": "0.15",
+    "Acc": 10,
+    "Stress": "0.10"
+  },
+  "Quick Draw Charm": {
+    "Spd": 5,
+    "Crit": "0.12"
+  },
+  "Recovery Charm": {
+    "Healing Received": "0.40"
+  },
+  "Sniper's Ring": {
+    "Acc": 15,
+    "Crit": "0.04",
+    "Spd": -2
+  },
+  "Solar Crown": {
+    "Stress": "-0.20"
+  },
+  "Sun Cloak": {
+    "Prot": "0.05",
+    "Dodge": 10,
+    "Stress": "0.10"
+  },
+  "Sun Ring": {
+    "Dmg": "0.10",
+    "Acc": 5,
+    "Stress": "0.10"
+  },
+  "Unholy Slayer's Ring": {
+    "Dmg": "0.25",
+    "Dodge": -8
+  },
+  "Book of Sanity": {
+    "Stress": "-0.20"
+  },
+  "Cleansing Crystal": {
+    "Blight Resist": "0.40",
+    "Bleed Resist": "0.40",
+    "Debuff Resist": "0.40",
+    "Blight Skill Chance": "-0.15",
+    "Bleed Skill Chance": "-0.15",
+    "Debuff Skill Chance": "-0.15"
+  },
+  "Ethereal Crucifix": {
+    "Dmg": "0.25",
+    "Bleed Resist": "0.30",
+    "Max Hp": "-0.20"
+  },
+  "Focus Ring": {
+    "Acc": 15,
+    "Crit": "0.05",
+    "Dodge": -8
+  },
+  "Fortifying Garlic": {
+    "Blight Resist": "0.33",
+    "Bleed Resist": "0.33",
+    "Disease Resist": "0.33"
+  },
+  "Hero's Ring": {
+    "Virtue Chance": "0.25"
+  },
+  "Legendary Bracer": {
+    "Dmg": "0.20",
+    "Spd": -1,
+    "Stress": "0.10"
+  },
+  "Martyr's Seal": {
+    "Dmg": "0.60",
+    "Crit": "0.14",
+    "Death Blow Resist": "0.12",
+    "Max Hp": "0.15"
+  },
+  "Tough Ring": {
+    "Prot": "0.10",
+    "Max Hp": "0.15",
+    "Dmg": "-0.15",
+    "Stress": "0.10"
+  },
+  "Lock of Patience": {
+    "Virtue Chance": "0.10"
+  },
+  "Padlock of Transference": {
+    "Stun Skill Chance": "0.20",
+    "Blight Skill Chance": "0.20"
+  },
+  "Protective Padlock": {
+    "Prot": "0.15",
+    "Spd": -1
+  },
+  "Lock of Fury": {
+    "Dmg": "0.10",
+    "Spd": 3,
+    "Max Hp": "-0.10"
+  },
+  "Restraining Padlock": {
+    "Stress": "-0.40"
+  },
+  "Bag of Marbles": {
+    "Dodge": 10
+  },
+  "Bloodcourse Medallion": {
+    "Healing Received": "0.33"
+  },
+  "Carapace Idol": {
+    "Prot": "0.25"
+  },
+  "Fleet Florin": {
+    "Spd": 4,
+    "Debuff Skill Chance": "0.20"
+  },
+  "Candle of Life": {
+    "Healing Skills": "0.50",
+    "Max Hp": "0.15"
+  },
+  "Sturdy Greaves": {
+    "Move Resist": "0.30",
+    "Move Skill Chance": "0.30",
+    "Spd": -1
+  },
+  "Vengeful Greaves": {
+    "Crit": "0.03"
+  },
+  "Medic's Greaves": {
+    "Healing Skills": "0.33"
+  },
+  "Bull's Eye Bandana": {
+    "Acc": 8,
+    "Crit": "0.05",
+    "Dodge": -4
+  },
+  "Wrathful Bandana": {
+    "Dmg": "0.25",
+    "Debuff Skill Chance": "0.30",
+    "Healing Skills": "-0.50"
+  },
+  "Agility Talon": {
+    "Spd": 1,
+    "Dodge": 4
+  },
+  "Unmovable Helmet": {
+    "Move Resist": "0.30",
+    "Move Skill Chance": "0.20"
+  },
+  "Camper's Helmet": {
+    "Stress": "0.20",
+    "Scouting Chance": "0.10"
+  },
+  "Hunter's Talons": {
+    "Crit": "0.06",
+    "Acc": 10,
+    "Food Consumed": "0.50"
+  },
+  "Wounding Helmet": {
+    "Dmg": "0.25",
+    "Move Skill Chance": "-0.25",
+    "Stun Skill Chance": "-0.20"
+  },
+  "Defender's Seal": {
+    "Prot": "0.05",
+    "Crit": "-0.03"
+  },
+  "Knight's Crest": {
+    "Max Hp": "0.10"
+  },
+  "Swordsman's Crest": {
+    "Dmg": "0.10",
+    "Healing Skills": "-0.50"
+  },
+  "Paralyzer's Crest": {
+    "Stun Skill Chance": "0.20",
+    "Dodge": -2
+  },
+  "Commander's Orders": {
+    "Stress": "0.15",
+    "Healing Skills": "0.33",
+    "Dmg": "-0.10"
+  },
+  "Holy Orders": {
+    "Virtue Chance": "0.15",
+    "Stress": "-0.20",
+    "Death Blow Resist": "0.12",
+    "Blight Resist": "-0.20",
+    "Bleed Resist": "-0.20"
+  },
+  "Heartburst Hood": {
+    "Spd": 4
+  },
+  "Resurrection's Collar": {
+    "Healing Skills": "0.33",
+    "Bleed Skill Chance": "-0.15"
+  },
+  "Punishment's Hood": {
+    "Bleed Skill Chance": "0.20",
+    "Healing Skills": "-0.20",
+    "Dmg": "0.15"
+  },
+  "Suffering's Collar": {
+    "Bleed Resist": "0.20",
+    "Blight Resist": "0.20",
+    "Max Hp": "0.10"
+  },
+  "Eternity's Collar": {
+    "Death Blow Resist": "0.10",
+    "Dodge": 20,
+    "Dmg": "0.20"
+  },
+  "Quickening Satchel": {
+    "Spd": 2
+  },
+  "Sickening Satchel": {
+    "Dmg": "0.20"
+  },
+  "Blighting Satchel": {
+    "Blight Skill Chance": "0.25",
+    "Spd": 1,
+    "Dodge": -4
+  },
+  "Lucky Talisman": {
+    "Dodge": 12,
+    "Acc": 10,
+    "Stress": "0.10"
+  },
+  "Raider's Talisman": {
+    "Crit": "0.05",
+    "Trap Disarm Chance": "0.30",
+    "Spd": 2,
+    "Scouting Chance": "0.15",
+    "Max Hp": "-0.10"
+  },
+  "Bleeding Pendant": {
+    "Bleed Skill Chance": "0.15"
+  },
+  "Selfish Pendant": {
+    "Stress": "-0.15"
+  },
+  "Double-Edged Pendant": {
+    "Max Hp": "0.15",
+    "Stun Resist": "-0.20"
+  },
+  "Heaven's Hairpin": {
+    "Stress": "-0.25",
+    "Acc": 10
+  },
+  "Hell's Hairpin": {
+    "Crit": "0.10",
+    "Acc": 15,
+    "Debuff Resist": "-0.10",
+    "Bleed Resist": "-0.10"
+  },
+  "Drifter's Buckle": {
+    "Trap Disarm Chance": "0.10",
+    "Dodge": 4,
+    "Stress": "-0.05"
+  },
+  "Flashfire Gunpowder": {
+    "Dmg": "0.10",
+    "Stun Resist": "-0.20"
+  },
+  "Stalwart Buckle": {
+    "Crit": "0.05",
+    "Stress": "0.05",
+    "Virtue Chance": "-0.03"
+  },
+  "Dodgy Sheath": {
+    "Dodge": 8,
+    "Spd": 1,
+    "Acc": -10
+  },
+  "Sharpening Sheath": {
+    "Crit": "0.07",
+    "Bleed Skill Chance": "0.40",
+    "Spd": -1
+  },
+  "Gunslinger's Buckle": {
+    "Dmg": "0.20-0.10",
+    "Acc": 15,
+    "Crit": "-0.05"
+  },
+  "Agility Whistle": {
+    "Dodge": 4,
+    "Spd": 1,
+    "Debuff Resist": "-0.20"
+  },
+  "Scouting Whistle": {
+    "Scouting Chance": "0.20",
+    "Trap Disarm Chance": "0.20"
+  },
+  "Cudgel Weight": {
+    "Stun Skill Chance": "0.25",
+    "Spd": -1
+  },
+  "Protective Collar": {
+    "Dodge": 12,
+    "Dmg": "-0.15"
+  },
+  "Spiked Collar": {
+    "Dmg": "0.20",
+    "Bleed Skill Chance": "0.30",
+    "Healing Skills": "-0.50",
+    "Healing Received": "-0.20"
+  },
+  "Bloody Dice": {
+    "Bleed Skill Chance": "0.30",
+    "Bleed Resist": "-0.10"
+  },
+  "Lucky Dice": {
+    "Acc": 4,
+    "Dodge": 4
+  },
+  "Critical Dice": {
+    "Crit": "0.07"
+  },
+  "Bright Tambourine": {
+    "Stress": "0.20-0.250.15"
+  },
+  "Dark Tambourine": {
+    "Death Blow Resist": "0.12",
+    "Stress": "-0.25",
+    "Virtue Chance": "0.10"
+  },
+  "Healing Armlet": {
+    "Healing Received": "0.20"
+  },
+  "Redemption Armlet": {
+    "Dmg": "0.15",
+    "Virtue Chance": "-0.03"
+  },
+  "Fortunate Armlet": {
+    "Acc": 8,
+    "Crit": "0.03",
+    "Stress": "0.10"
+  },
+  "Immunity Mask": {
+    "Stun Resist": "0.40",
+    "Blight Resist": "0.30",
+    "Bleed Resist": "0.30",
+    "Max Hp": "-0.10"
+  },
+  "Berserk Mask": {
+    "Crit": "0.08",
+    "Spd": 3,
+    "Virtue Chance": "-0.10",
+    "Healing Received": "-0.33"
+  },
+  "Cleansing Eyepatch": {
+    "Blight Resist": "0.30",
+    "Disease Resist": "0.20",
+    "Dodge": -2
+  },
+  "Sly Eyepatch": {
+    "Dodge": 4,
+    "Stun Resist": "-0.10",
+    "Move Resist": "-0.10"
+  },
+  "Longevity Eyepatch": {
+    "Max Hp": "0.15",
+    "Spd": -2
+  },
+  "Rampart Shield": {
+    "Move Skill Chance": "0.40",
+    "Stun Skill Chance": "0.30",
+    "Dmg": "-0.15"
+  },
+  "Guardian's Shield": {
+    "Prot": "0.10",
+    "Healing Received": "0.50",
+    "Dodge": 10
+  },
+  "Sturdy Boots": {
+    "Move Resist": "0.30",
+    "Move Skill Chance": "0.30",
+    "Spd": -1
+  },
+  "Vengeful Boots": {
+    "Crit": "0.03"
+  },
+  "Medic's Boots": {
+    "Healing Skills": "0.33"
+  },
+  "Bull's Eye Hat": {
+    "Acc": 8,
+    "Crit": "0.05",
+    "Dodge": -4
+  },
+  "Wrathful Hat": {
+    "Dmg": "0.20",
+    "Debuff Skill Chance": "0.30",
+    "Healing Skills": "-0.30",
+    "Healing Received": "-0.30"
+  },
+  "Eldritch Killing Incense": {
+    "Crit": "0.06",
+    "Dmg": "0.15"
+  },
+  "Evasion Incense": {
+    "Dodge": 8,
+    "Spd": -1
+  },
+  "Cursed Incense": {
+    "Debuff Skill Chance": "0.40",
+    "Move Skill Chance": "0.20",
+    "Max Hp": "-0.10"
+  },
+  "Sacrifical Cauldron": {
+    "Dmg": "0.20",
+    "Stress": "0.10"
+  },
+  "Demon's Cauldron": {
+    "Stun Skill Chance": "0.30",
+    "Debuff Skill Chance": "0.40",
+    "Crit": "0.03",
+    "Virtue Chance": "-0.10",
+    "Stress": "0.15"
+  },
+  "Diseased Herb": {
+    "Disease Resist": "0.40"
+  },
+  "Rotgut Censer": {
+    "Acc": 8,
+    "Max Hp": "-0.05"
+  },
+  "Witch's Vial": {
+    "Stun Skill Chance": "0.15"
+  },
+  "Poisoned Herb": {
+    "Blight Skill Chance": "0.40",
+    "Max Hp": "-0.15"
+  },
+  "Bloody Herb": {
+    "Acc": 10,
+    "Bleed Skill Chance": "0.30",
+    "Dmg": "0.20"
+  },
+  "Blasphemous Vial": {
+    "Acc": 10,
+    "Stun Skill Chance": "0.20",
+    "Blight Skill Chance": "0.20",
+    "Stress": "0.25"
+  },
+  "Venomous Vial": {
+    "Blight Skill Chance": "0.30",
+    "Blight Resist": "-0.10"
+  },
+  "Shimmering Scale": {
+    "Prot": "0.10",
+    "Stress": "0.05"
+  },
+  "Dancer's Footwraps": {
+    "Move Resist": "0.40",
+    "Spd": 2
+  },
+  "Fanged Spear Tip": {
+    "Dmg": "0.35-0.10"
+  },
+  "Cuirboilli": {
+    "Max Hp": "0.33",
+    "Spd": -2
+  },
+  "Virtuous Chalice": {
+    "Virtue Chance": "0.10",
+    "Max Hp": "-0.05"
+  },
+  "Haste Chalice": {
+    "Spd": 10,
+    "Stun Skill Chance": "-0.25"
+  },
+  "Youth Chalice": {
+    "Max Hp": "0.20",
+    "Dmg": "-0.10"
+  },
+  "Profane Scroll": {
+    "Dmg": "0.15",
+    "Prot": "0.10",
+    "Healing Skills": "0.33",
+    "Stress": "0.15"
+  },
+  "Tome of Holy Healing": {
+    "Healing Skills": "0.25",
+    "Max Hp": "-0.15"
+  },
+  "Sacred Scroll": {
+    "Stress": "-0.10",
+    "Healing Skills": "0.33",
+    "Stun Skill Chance": "-0.10",
+    "Dmg": "-0.33"
+  },
+  "Aria Box": {
+    "Stress": "-0.25"
+  },
+  "Crescendo Box": {
+    "Spd": 2,
+    "Dmg": "0.15",
+    "Stress": "0.10"
+  },
+  "Overture Box": {
+    "Max Hp": "0.15",
+    "Dodge": 8,
+    "Acc": -2
+  },
+  "Barristan's Head": {
+    "Prot": "0.25",
+    "Stress": "0.20"
+  },
+  "Dismas' Head": {
+    "Dmg": "0.25",
+    "Max Hp": "-0.10",
+    "Stress": "0.20"
+  },
+  "Junia's Head": {
+    "Healing Skills": "0.30",
+    "Stress": "0.20"
+  },
+  "Tempting Goblet": {
+    "Max Hp": "0.20",
+    "Spd": 3,
+    "Dodge": 8,
+    "Stress": "0.25",
+    "Virtue Chance": "-0.10"
+  },
+  "Ancestor's Bottle": {
+    "Max Hp": "0.25",
+    "Food Consumed": "0.50",
+    "Stress": "0.10"
+  },
+  "Ancestor's Candle": {
+    "Dmg": "0.15",
+    "Spd": 2,
+    "Dodge": 5,
+    "Stress": "0.10"
+  },
+  "Ancestor's Coat": {
+    "Dodge": 15,
+    "Stress": "0.10"
+  },
+  "Ancestor's Handkerchief": {
+    "Disease Resist": "0.50",
+    "Bleed Resist": "0.50",
+    "Stress": "0.10"
+  },
+  "Ancestor's Lantern": {
+    "Chance Party Surprised": "-0.20",
+    "Chance Monsters Surprised": "0.20",
+    "Stress": "0.10"
+  },
+  "Ancestor's Map": {
+    "Trap Disarm Chance": "0.25",
+    "Scouting Chance": "0.25",
+    "Stress": "0.10"
+  },
+  "Ancestor's Mustache Cream": {
+    "Debuff Resist": "0.50",
+    "Blight Resist": "0.50",
+    "Stress": "0.10"
+  },
+  "Ancestor's Musket Ball": {
+    "Dmg": "0.10",
+    "Crit": "0.08",
+    "Stress": "0.10"
+  },
+  "Ancestor's Pen": {
+    "Dmg": "0.10",
+    "Crit": "0.08",
+    "Stress": "0.10"
+  },
+  "Ancestor's Pistol": {
+    "Acc": 15,
+    "Spd": 3,
+    "Stress": "0.10"
+  },
+  "Ancestor's Portrait": {
+    "Resolve Xp": "0.50",
+    "Stress": "0.10"
+  },
+  "Ancestor's Scroll": {
+    "Healing Skills": "0.25",
+    "Stress": "0.250.10"
+  },
+  "Ancestor's Signet Ring": {
+    "Acc": 10,
+    "Prot": "0.10",
+    "Stress": "0.10"
+  },
+  "Ancestor's Tentacle Idol": {
+    "Virtue Chance": "0.20",
+    "Death Blow Resist": "0.08"
+  },
+  "Necromancer's Collar": {
+    "Dmg": "0.20",
+    "Crit": "0.08"
+  },
+  "Prophet's Eye": {
+    "Acc": 15,
+    "Spd": 3,
+    "Stress": "-0.15"
+  },
+  "Hag's Ladle": {
+    "Blight Skill Chance": "0.30",
+    "Blight Resist": "0.40",
+    "Disease Resist": "0.40"
+  },
+  "Fuseman's Matchstick": {
+    "Spd": 2,
+    "Dmg": "0.10",
+    "Crit": "0.06"
+  },
+  "Wilbur's Flag": {
+    "Stun Resist": "0.50",
+    "Dodge": 10
+  },
+  "Flesh's Heart": {
+    "Bleed Resist": "0.50",
+    "Max Hp": "0.15"
+  },
+  "Siren's Conch": {
+    "Debuff Resist": "0.50",
+    "Stress": "-0.20"
+  },
+  "Crew's Bell": {
+    "Move Resist": "0.50",
+    "Healing Received": "0.20"
+  },
+  "Vvulf's Tassle": {
+    "Dmg": "0.20",
+    "Acc": 10,
+    "Crit": "0.05"
+  },
+  "Baron's Lash": {
+    "Debuff Resist": "0.75",
+    "Spd": 4,
+    "Stun Resist": "-0.10"
+  },
+  "Viscount's Spices": {
+    "Crit": "0.05",
+    "Healing When Eating": "1.00",
+    "Food Consumed": "1.00"
+  },
+  "Countess' Fan": {
+    "Healing Received": "0.50",
+    "Bleed Resist": "-0.25"
+  },
+  "Callous Talon": {
+    "Crit": "0.07",
+    "Disease Resist": "0.33",
+    "Bleed Skill Chance": "0.33",
+    "Stress": "0.15"
+  },
+  "Distended Crowseye": {
+    "Acc": 10,
+    "Disease Resist": "0.33",
+    "Scouting Chance": "0.15",
+    "Stress": "0.15"
+  },
+  "Molted Tailfeather": {
+    "Spd": 4,
+    "Disease Resist": "0.33",
+    "Stun Resist": "0.33",
+    "Stress": "0.15"
+  },
+  "Molted Wingfeather": {
+    "Dodge": 10,
+    "Disease Resist": "0.33",
+    "Move Resist": "0.33",
+    "Stress": "0.15"
+  },
+  "Ancestor's Vintage": {},
+  "Coven Signet": {
+    "Stress": "-0.25"
+  },
+  "Dazzling Mirror": {
+    "Spd": 4,
+    "Stun Skill Chance": "0.20"
+  },
+  "Mantra of Fasting": {
+    "Max Hp": "0.40",
+    "Spd": 7
+  },
+  "Mercurial Salve": {
+    "Dmg": "0.25"
+  },
+  "Pagan Talisman": {
+    "Dmg": "0.25",
+    "Stress": "-0.10"
+  },
+  "Rat Carcass": {},
+  "Sanguine Snuff": {
+    "Crit": "0.08",
+    "Dodge": 15
+  },
+  "Sculptor's Tools": {
+    "Dmg": "0.40"
+  },
+  "Shameful Shroud": {
+    "Stress": "-0.15",
+    "Dodge": 10,
+    "Dmg": "0.20"
+  },
+  "Osmond Chains": {
+    "Dmg": "0.200.20",
+    "Crit": "0.08"
+  },
+  "The Master's Essence": {
+    "Healing Skills": "0.50",
+    "Blight Skill Chance": "0.35",
+    "Debuff Skill Chance": "0.35",
+    "Spd": 4,
+    "Dodge": 10
+  },
+  "Two of Three": {
+    "Dmg": "0.50",
+    "Crit": "0.08",
+    "Spd": 4,
+    "Dodge": 10
+  },
+  "Childhood Treasure": {
+    "Healing Skills": "0.300.20",
+    "Stress": "-0.15",
+    "Prot": "0.25"
+  },
+  "Bedtime Story": {
+    "Acc": 15,
+    "Crit": "0.08",
+    "Debuff Skill Chance": "0.35",
+    "Move Skill Chance": "0.35",
+    "Prot": "0.25"
+  },
+  "Crime Lords' Molars": {
+    "Dmg": "0.200.200.20",
+    "Dodge": -10,
+    "Crit": "0.050.050.05"
+  },
+  "Vengeful Kill List": {
+    "Move Skill Chance": "0.50",
+    "Bleed Skill Chance": "0.35",
+    "Acc": 15,
+    "Crit": "0.050.050.05"
+  },
+  "Glittering Spaulders": {
+    "Prot": "0.15",
+    "Move Resist": "0.35",
+    "Stress": "-0.15",
+    "Spd": -2,
+    "Max Hp": "0.20"
+  },
+  "Signed Conscription": {
+    "Healing Skills": "0.20",
+    "Stress": "0.20",
+    "Max Hp": "0.20"
+  },
+  "Chipped Tooth": {
+    "Max Hp": "0.20",
+    "Move Resist": "0.35",
+    "Death Blow Resist": "0.10"
+  },
+  "Shard of Glass": {
+    "Bleed Skill Chance": "0.35",
+    "Bleed Resist": "-0.20",
+    "Death Blow Resist": "0.10"
+  },
+  "Absinthe": {
+    "Disease Resist": "0.35",
+    "Blight Resist": "0.35",
+    "Blight Skill Chance": "0.35",
+    "Max Hp": "-0.10",
+    "Crit": "0.05"
+  },
+  "Sharpened Letter Opener": {
+    "Dmg": "0.25",
+    "Acc": 10,
+    "Dodge": 5,
+    "Crit": "0.05"
+  },
+  "Lioness Warpaint": {
+    "Dmg": "0.200.200.20",
+    "Stress": "0.10",
+    "Acc": 7,
+    "Dodge": 7
+  },
+  "Mark of the Outcast": {
+    "Spd": 2,
+    "Bleed Skill Chance": "0.35",
+    "Death Blow Resist": "0.15",
+    "Healing Received": "-0.15",
+    "Acc": 7,
+    "Dodge": 7
+  },
+  "Bloodied Neckerchief": {
+    "Spd": 2,
+    "Dodge": 10,
+    "Virtue Chance": "0.45"
+  },
+  "Shameful Locket": {
+    "Acc": 10,
+    "Crit": "0.05",
+    "Stress": "0.15",
+    "Virtue Chance": "0.45"
+  },
+  "Evidence of Corruption": {
+    "Scouting Chance": "0.25",
+    "Chance Party Surprised": "-0.15",
+    "Stress": "0.10",
+    "Dmg": "0.25",
+    "Crit": "0.05"
+  },
+  "Battered Lawman's Badge": {
+    "Acc": 15,
+    "Stress": "0.50",
+    "Healing Skills": "0.25",
+    "Stun Resist": "-0.20",
+    "Debuff Resist": "-0.20",
+    "Dmg": "0.25",
+    "Crit": "0.05"
+  },
+  "Tyrant's Tasting Cup": {
+    "Stress": "0.330.250.33"
+  },
+  "Tyrant's Fingerbone": {
+    "Spd": 3,
+    "Dodge": 20,
+    "Stress": "0.33"
+  },
+  "Last Will and Testament": {
+    "Prot": "0.15",
+    "Max Hp": "0.15",
+    "Death Blow Resist": "-0.10",
+    "Acc": 15
+  },
+  "Tin Flute": {
+    "Stress": "-0.200.33",
+    "Acc": 15
+  },
+  "Old Unit Standard": {
+    "Stun Skill Chance": "0.15",
+    "Debuff Skill Chance": "0.20",
+    "Death Blow Resist": "0.15",
+    "Stress": "0.10",
+    "Dmg": "0.25",
+    "Acc": 10
+  },
+  "Toy Soldier": {
+    "Prot": "0.10",
+    "Crit": "0.05",
+    "Dmg": "0.25",
+    "Acc": 10
+  },
+  "Second Place Trophy": {
+    "Healing Skills": "0.300.20",
+    "Stress": "-0.15",
+    "Prot": "0.25"
+  },
+  "Silver Musket Ball": {
+    "Acc": 15,
+    "Crit": "0.08",
+    "Debuff Skill Chance": "0.35",
+    "Move Skill Chance": "0.35",
+    "Prot": "0.25"
+  },
+  "Blood Pact": {
+    "Spd": 4,
+    "Dmg": "0.25",
+    "Bleed Skill Chance": "-0.25",
+    "Max Hp": "-0.10",
+    "Dodge": 15
+  },
+  "Vial of Sand": {
+    "Debuff Skill Chance": "0.20",
+    "Stun Skill Chance": "0.20",
+    "Move Skill Chance": "0.20",
+    "Stun Resist": "0.20",
+    "Dodge": 15
+  },
+  "Subject #40 Notes": {
+    "Max Hp": "0.25",
+    "Disease Resist": "0.35",
+    "Blight Skill Chance": "0.15",
+    "Stun Skill Chance": "0.15"
+  },
+  "Dissection Kit": {
+    "Bleed Skill Chance": "0.35",
+    "Dmg": "0.25",
+    "Blight Skill Chance": "0.15",
+    "Stun Skill Chance": "0.15"
+  },
+  "Obsidian Dagger": {
+    "Debuff Skill Chance": "0.40",
+    "Blight Skill Chance": "0.40",
+    "Max Hp": "0.15",
+    "Prot": "0.10"
+  },
+  "Severed Hand": {
+    "Blight Resist": "0.50",
+    "Stress": "-0.10",
+    "Max Hp": "0.15",
+    "Prot": "0.10"
+  },
+  "Atonement Beads": {
+    "Dmg": "0.15",
+    "Crit": "0.08",
+    "Virtue Chance": "-0.15",
+    "Debuff Skill Chance": "0.35",
+    "Stun Skill Chance": "0.35"
+  },
+  "Salacious Diary": {
+    "Stress": "0.33",
+    "Healing Skills": "0.25",
+    "Debuff Skill Chance": "0.35",
+    "Stun Skill Chance": "0.35"
+  },
+  "Lens of the Comet": {
+    "Virtue Chance": "-0.20",
+    "Crit": "0.05"
+  },
+  "Petrified Skull": {
+    "Prot": "0.400.30",
+    "Healing Received": "-0.20",
+    "Max Hp": "0.15"
+  },
+  "Broken Key": {
+    "Acc": 15,
+    "Stun Skill Chance": "0.35",
+    "Stress": "0.10"
+  },
+  "Smoking Skull": {
+    "Dodge": 35,
+    "Acc": -15,
+    "Blight Resist": "-0.15"
+  },
+  "Ashen Distillation": {
+    "Dodge": 20,
+    "Blight Skill Chance": "0.25",
+    "Healing Received": "0.20"
+  },
+  "Dirge For The Devoured": {
+    "Stress": "0.250.10",
+    "Dmg": "0.25"
+  },
+  "Acidic Husk Ichor": {
+    "Max Hp": "-0.25",
+    "Dmg": "0.30",
+    "Bleed Skill Chance": "0.30",
+    "Healing Received": "0.25"
+  },
+  "Spectral Speartip": {
+    "Dmg": "0.15",
+    "Blight Skill Chance": "0.20",
+    "Max Hp": "0.15",
+    "Random Target Chance": "0.05"
+  },
+  "Crystal Pendant": {
+    "Shards Given": "0.15",
+    "Stress": "0.15"
+  },
+  "Heretical Passage": {
+    "Healing Skills": "0.20",
+    "Dmg": "0.250.25",
+    "Stress": "0.10"
+  },
+  "Huskfang Whistle": {
+    "Bleed Skill Chance": "0.50",
+    "Stress": "0.40",
+    "Dodge": -10,
+    "Guard Duration": "0.66"
+  },
+  "Mask Of The Timeless": {
+    "Spd": 2,
+    "Dodge": 15,
+    "Stress": "0.05"
+  },
+  "Mirror Shield": {
+    "Dodge": 10,
+    "Damage Reflection": "0.30",
+    "Stun Resist": "0.20"
+  },
+  "Topshelf Tonic": {
+    "Dodge": 15,
+    "Spd": 3,
+    "Blight Resist": "-0.20",
+    "Blight Duration": "0.50"
+  },
+  "Petrified Amulet": {
+    "Acc": 10,
+    "Max Hp": "0.15",
+    "Bleed Resist": "-0.15"
+  },
+  "Crystalline Gunpowder": {
+    "Dmg": "0.20",
+    "Spd": 3,
+    "Stun Resist": "-0.15"
+  },
+  "Cluster Pendant": {
+    "Shards Given": "0.25",
+    "Stress": "0.15"
+  },
+  "Thirsting Blade": {
+    "Acc": 15,
+    "Bleed Resist": "-0.20",
+    "Spd": 2,
+    "Crit": "0.08"
+  },
+  "Icosahedric Musket Balls": {
+    "Dmg": "0.20",
+    "Random Target Chance": "0.20"
+  },
+  "Keening Bolts": {
+    "Dmg": "0.20",
+    "Crit": "0.07"
+  },
+  "Coat Of Many Colors": {
+    "Stress": "-0.02",
+    "Acc": 2
+  },
+  "Miller's Pipe": {
+    "Prot": "-0.20",
+    "Spd": -2
+  },
+  "Non-Euclidean Hilt": {
+    "Max Hp": "0.15",
+    "Random Target Chance": "0.05",
+    "Stun Skill Chance": "0.25"
+  },
+  "Mildred's Locket": {
+    "Dmg": "-1.000.40",
+    "Blight Resist": "0.40",
+    "Spd": 3
+  },
+  "Thing's Mesmerizing Eye": {
+    "Crit": "0.040.08"
+  },
+  "Crystalline Fang": {
+    "Stun Skill Chance": "0.100.40"
+  },
+  "Phase Shifting Hide": {
+    "Stress": "-0.15-0.50"
+  },
+  "Prismatic Heart Crystal": {
+    "Blight Skill Chance": "0.35",
+    "Bleed Skill Chance": "0.35",
+    "Crit": "0.12"
+  },
+  "Ankh of Life": {
+    "Death Blow Resist": "0.08",
+    "Dodge": 10
+  },
+  "Bloodstained Gambeson": {
+    "Max Hp": "0.08",
+    "Death Blow Resist": "0.04"
+  },
+  "Brass Bugle": {
+    "Stress": "0.50"
+  },
+  "Brass Knuckles": {
+    "Dmg": "0.10",
+    "Stun Skill Chance": "0.10"
+  },
+  "Carnival Masque": {
+    "Stress": "0.20",
+    "Acc": 4
+  },
+  "Crimson Hook": {
+    "Stress": "0.25",
+    "Bleed Skill Chance": "0.15",
+    "Crit": "0.03"
+  },
+  "Crushed Hemlock": {
+    "Blight Skill Chance": "0.20"
+  },
+  "Eagle Eye Talisman": {
+    "Dmg": "0.10",
+    "Acc": 10
+  },
+  "Eerie Eye": {
+    "Acc": 12,
+    "Debuff Skill Chance": "0.20"
+  },
+  "Exotic Snuff": {
+    "Stun Resist": "0.30",
+    "Move Resist": "0.30",
+    "Dmg": "0.10",
+    "Acc": 4
+  },
+  "Gladiator Helmet": {
+    "Max Hp": "0.10",
+    "Prot": "0.05"
+  },
+  "Hunters Charm": {
+    "Dmg": "0.15",
+    "Acc": 4
+  },
+  "Jagged Chopper": {
+    "Dmg": "0.15",
+    "Crit": "0.03"
+  },
+  "Monkey's Paw": {
+    "Dodge": 15,
+    "Acc": 4,
+    "Stress": "0.10"
+  },
+  "Nepenthe": {
+    "Stress": "-0.15",
+    "Virtue Chance": "0.25",
+    "Debuff Resist": "0.15"
+  },
+  "Numbing Incense": {
+    "Stress": "-0.15",
+    "Stun Resist": "0.20",
+    "Dodge": -4
+  },
+  "Pitfighter's Helm": {
+    "Prot": "0.20",
+    "Stress": "0.10"
+  },
+  "Rancid Cure All": {
+    "Bleed Resist": "0.40",
+    "Blight Resist": "0.40",
+    "Debuff Resist": "0.30"
+  },
+  "Retarius' Net": {
+    "Move Skill Chance": "0.20",
+    "Acc": 6
+  },
+  "Rotting Trophy": {
+    "Stress": "0.15",
+    "Blight Skill Chance": "0.30",
+    "Blight Resist": "-0.20"
+  },
+  "Sanity's Bane": {
+    "Dmg": "0.15",
+    "Acc": 10,
+    "Death Blow Dealt Chance": "0.25",
+    "Stun Skill Chance": "0.25"
+  },
+  "Silver Syringe": {
+    "Healing Skills": "0.35"
+  },
+  "Spiked Bat": {
+    "Dmg": "0.10",
+    "Bleed Skill Chance": "0.20"
+  },
+  "The Finisher": {
+    "Death Blow Dealt Chance": "0.25",
+    "Acc": 20
+  },
+  "Treated Bandage": {
+    "Healing Received": "0.35",
+    "Bleed Resist": "0.40",
+    "Blight Resist": "0.40"
+  },
+  "Shattered Padlock": {
+    "Dmg": "0.15",
+    "Move Skill Chance": "0.15",
+    "Crit": "0.03"
+  },
+  "Spiked Chain": {
+    "Dmg": "0.20",
+    "Stun Skill Chance": "0.10",
+    "Blight Skill Chance": "0.20"
+  },
+  "Taste of Grandeur": {
+    "Dmg": "0.10",
+    "Acc": 4,
+    "Virtue Chance": "0.25",
+    "Stress": 8
+  },
+  "Clasp of the Beast": {
+    "Prot": "0.10",
+    "Max Hp": "0.10",
+    "Inflict Stress": 5
+  },
+  "Black Diamond Mirror": {
+    "Max Hp": "0.15",
+    "Dodge": 15,
+    "Stress": "0.10"
+  },
+  "Tears of the Lost": {
+    "Virtue Chance": "0.30",
+    "Stress": "-0.15",
+    "Debuff Skill Chance": "0.20",
+    "Restoration Duration": "0.33"
+  },
+  "Ghoul Claw": {
+    "Dmg": "0.25",
+    "Crit": "0.06",
+    "Acc": 10,
+    "Stress": 6
+  },
+  "Impossible Glyph": {
+    "Stress": "0.20",
+    "Debuff Skill Chance": "0.30",
+    "Acc": 6
+  },
+  "Materia Pestis": {
+    "Blight Skill Chance": "0.20",
+    "Blight Duration": "0.33"
+  },
+  "Piercing Quarrel": {
+    "Dmg": "0.10",
+    "Crit": "0.07",
+    "Armor Piercing": "0.20"
+  },
+  "Medic Fullplate": {
+    "Healing Skills": "0.33",
+    "Prot": "0.15",
+    "Stress": "-0.15"
+  },
+  "Stabilizing Tiller": {
+    "Dmg": "0.150.15",
+    "Acc": 12,
+    "Crit": "0.05"
+  },
+  "Weighted Bolas": {
+    "Move Skill Chance": "0.30",
+    "Debuff Skill Chance": "0.20",
+    "Acc": 12
+  },
+  "Bounty Notice": {
+    "Dmg": "0.20",
+    "Acc": 10,
+    "Crit": "0.04"
+  },
+  "Grappling Mits": {
+    "Move Skill Chance": "0.25",
+    "Stun Skill Chance": "0.20",
+    "Acc": 8
+  },
+  "Heart Seeker": {
+    "Dmg": "0.25",
+    "Death Blow Dealt Chance": "0.10"
+  },
+  "Infamous Visage": {
+    "Dmg": "0.20",
+    "Crit": "0.10",
+    "Acc": 5,
+    "Inflict Stress": 15
+  },
+  "writ of execution": {
+    "Dmg": "0.10",
+    "Acc": 8,
+    "Stress": "0.15",
+    "Death Blow Dealt Chance": "0.10"
+  },
+  "Sacred Blade": {
+    "Dmg": "0.15",
+    "Stun Skill Chance": "0.20",
+    "Virtue Chance": "0.30"
+  },
+  "Battle Scarred Helm": {
+    "Prot": "0.05",
+    "Max Hp": "0.15",
+    "Death Blow Resist": "0.08"
+  },
+  "Confessor Gauntlet": {
+    "Dmg": "0.20",
+    "Crit": "0.15",
+    "Acc": 6
+  },
+  "Crown of Thorns": {
+    "Acc": 15,
+    "Dmg": "0.150.15"
+  },
+  "Madman Collar": {
+    "Healing Received": "0.10",
+    "Bleed Skill Chance": "0.30",
+    "Dmg": "0.25",
+    "Stress": "0.20"
+  },
+  "Gauntlet of Absolution": {
+    "Healing Skills": "0.33",
+    "Prot": "0.10",
+    "Stress": -10
+  },
+  "Well Balanced Stiletto": {
+    "Dmg": "0.150.20",
+    "Crit": "0.06",
+    "Acc": 15,
+    "Death Blow Dealt Chance": "0.20"
+  },
+  "Cloak and Dagger": {
+    "Dmg": "0.15",
+    "Death Blow Dealt Chance": "0.10",
+    "Dodge": 20
+  },
+  "Leather Bandolier": {
+    "Dmg": "0.10",
+    "Dodge": 8,
+    "Crit": "0.05"
+  },
+  "Satchel of Dirty Tricks": {
+    "Dodge": 10,
+    "Acc": 4,
+    "Blight Skill Chance": "0.20",
+    "Stress": "0.10"
+  },
+  "Razor Pin": {
+    "Acc": 10,
+    "Bleed Skill Chance": "0.20"
+  },
+  "Bone Vest": {
+    "Prot": "0.15",
+    "Death Blow Resist": "0.08",
+    "Stress": "0.200.10"
+  },
+  "Savage Gauntlets": {
+    "Acc": 8,
+    "Crit": "0.05",
+    "Dmg": "0.25",
+    "Stress": "0.15"
+  },
+  "Executioner Halberd": {
+    "Dmg": "0.15",
+    "Crit": "0.03",
+    "Death Blow Dealt Chance": "0.10"
+  },
+  "Grim Bandana": {
+    "Dmg": "0.10",
+    "Crit": "0.03",
+    "Stress": "0.200.10"
+  },
+  "Parrying Dagger": {
+    "Dmg": "0.100.10",
+    "Acc": 5,
+    "Bleed Skill Chance": "0.30",
+    "Crit": "0.03"
+  },
+  "Powder Flask": {
+    "Dmg": "0.20",
+    "Acc": 15,
+    "Stun Resist": "-0.20"
+  },
+  "Sturdy Buckle": {
+    "Dodge": 4,
+    "Max Hp": "0.15",
+    "Stress": "-0.10",
+    "Stun Resist": "0.30"
+  },
+  "Duelist's Pistol": {
+    "Dmg": "0.10",
+    "Crit": "0.05",
+    "Move Resist": "0.30",
+    "Acc": 10
+  },
+  "Attack Whistle": {
+    "Debuff Skill Chance": "0.20",
+    "Acc": 12
+  },
+  "Tattered Chewtoy": {
+    "Stress": "-0.150.50",
+    "Healing Received": "0.15",
+    "Restoration Duration": "0.33"
+  },
+  "Padded Armguard": {
+    "Prot": "0.15",
+    "Dodge": 12,
+    "Guard Duration": "0.33"
+  },
+  "Training Whistle": {
+    "Dmg": "0.150.15",
+    "Crit": "0.08"
+  },
+  "Reaper Shroud": {
+    "Dmg": "0.15",
+    "Crit": "0.03",
+    "Acc": 20
+  },
+  "Well Tuned Lute": {
+    "Stress": "0.30-0.20"
+  },
+  "Blood-red Coin": {
+    "Bleed Skill Chance": "0.20",
+    "Dmg": "0.25",
+    "Acc": 10
+  },
+  "Harlequin Masque": {
+    "Max Hp": "0.20",
+    "Stress": -10
+  },
+  "Gladiator Mask": {
+    "Dmg": "0.15",
+    "Crit": "0.03"
+  },
+  "Durable Armlet": {
+    "Max Hp": "0.10",
+    "Acc": 12
+  },
+  "Invigorating Balm": {
+    "Healing Received": "0.20",
+    "Bleed Resist": "0.20",
+    "Blight Resist": "0.20",
+    "Death Blow Resist": "0.08"
+  },
+  "Sharpening Stone": {
+    "Crit": "0.06"
+  },
+  "Insignia of Rank": {
+    "Acc": 20,
+    "Crit": "0.03",
+    "Debuff Skill Chance": "0.20"
+  },
+  "Protector's Kite": {
+    "Prot": "0.05",
+    "Max Hp": "0.15",
+    "Guard Duration": "0.33"
+  },
+  "Survivor Eyepatch": {
+    "Dodge": 12,
+    "Blight Resist": "0.20",
+    "Healing Received": "0.15"
+  },
+  "Veteran Gauntlet": {
+    "Dmg": "0.20",
+    "Stun Skill Chance": "0.30",
+    "Move Skill Chance": "0.20"
+  },
+  "Shield Spike": {
+    "Dmg": "0.25",
+    "Acc": 10,
+    "Crit": "0.08"
+  },
+  "Minié Ball": {
+    "Dmg": "0.10",
+    "Crit": "0.07",
+    "Armor Piercing": "0.20"
+  },
+  "Tincture of Iodine": {
+    "Healing Skills": "0.33",
+    "Stress": "-0.15",
+    "Blight Resist": "0.25"
+  },
+  "Iron Sights": {
+    "Dmg": "0.150.15",
+    "Acc": 12,
+    "Crit": "0.05"
+  },
+  "Buckshot Cartridge": {
+    "Move Skill Chance": "0.30",
+    "Debuff Skill Chance": "0.20",
+    "Acc": 12
+  },
+  "Fleshbound Grimoire": {
+    "Acc": 15,
+    "Move Skill Chance": "0.20",
+    "Horror Duration": "0.33"
+  },
+  "Calling Salts": {
+    "Dmg": "0.150.15",
+    "Crit": "0.04",
+    "Acc": 10
+  },
+  "Hand of Glory": {
+    "Stress": "0.20",
+    "Debuff Skill Chance": "0.30"
+  },
+  "Bleeding Skull": {
+    "Max Hp": "0.15",
+    "Death Blow Resist": "-0.10"
+  },
+  "Sacrificial Kris": {
+    "Dmg": "0.20",
+    "Acc": 10,
+    "Stress": "0.25",
+    "Death Blow Dealt Chance": "0.10"
+  },
+  "Volatile Concoction": {
+    "Blight Skill Chance": "0.20",
+    "Acc": 15
+  },
+  "Hazard Mask": {
+    "Acc": 8,
+    "Max Hp": "0.15",
+    "Healing Received": "0.15",
+    "Blight Resist": "0.20"
+  },
+  "Acrid Vial": {
+    "Stress": "0.20",
+    "Debuff Skill Chance": "0.20",
+    "Move Skill Chance": "0.30"
+  },
+  "Amputation Saw": {
+    "Dmg": "0.30",
+    "Bleed Skill Chance": "0.30",
+    "Acc": 10
+  },
+  "Graceful Anklet": {
+    "Dodge": 15,
+    "Acc": 4
+  },
+  "Viper Spear Tip": {
+    "Acc": 10,
+    "Blight Skill Chance": "0.20"
+  },
+  "Scaled Shoulder": {
+    "Prot": "0.05",
+    "Max Hp": "0.10",
+    "Death Blow Resist": "0.12"
+  },
+  "Fang Talisman": {
+    "Dmg": "0.150.10",
+    "Crit": "0.03"
+  },
+  "Idol of Purity": {
+    "Healing Skills": "0.33",
+    "Stress": "-0.15"
+  },
+  "Gleaming Breastplate": {
+    "Prot": "0.15",
+    "Death Blow Resist": "0.08"
+  },
+  "Purgation Talisman": {
+    "Dmg": "0.25",
+    "Crit": "0.07",
+    "Acc": 12,
+    "Debuff Skill Chance": "0.20"
+  },
+  "Tome of Fury": {
+    "Acc": 15,
+    "Debuff Skill Chance": "0.40",
+    "Stun Skill Chance": "0.30"
+  },
+  "Stone of Patience": {
+    "Stress": "-0.10",
+    "Virtue Chance": "0.05"
+  },
+  "Stone of Endurance": {
+    "Death Blow Resist": "0.08"
+  },
+  "Talisman of the Flame": {
+    "Stress": "-1.00",
+    "Dmg": "-1.00"
+  },
+  "Necklace": {},
+  "Stake": {}
+}
