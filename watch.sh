@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-npx webpack --watch &
+NODE_ENV="development" npx webpack --watch &
 
 bundle exec jekyll serve &
 

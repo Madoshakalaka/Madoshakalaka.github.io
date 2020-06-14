@@ -68,3 +68,5 @@ exclude:
   - show.sh
   - watch.sh
   - README.md
+  - console_scripts/
+  - .idea/
