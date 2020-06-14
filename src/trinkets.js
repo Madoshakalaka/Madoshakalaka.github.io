@@ -204,7 +204,12 @@ $(() => {
 
 
     const lazyLoadInstance = new LazyLoad();
-    lazyLoadInstance.update();
+    table.on('draw', function() {
+        lazyLoadInstance.update();
+    })
+
+
+
 
 
 })
