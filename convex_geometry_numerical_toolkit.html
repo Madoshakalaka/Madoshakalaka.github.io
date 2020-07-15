@@ -1,0 +1,78 @@
+---
+layout: page
+permalink: /tools/convex_geometry_numerical_toolkit/
+description: Let's do some computational convex geometry
+exclude: true
+title: Convex Geometry Numerical Toolkit
+---
+
+<h1>🚧Under Construction🚧</h1>
+
+<label for="point_file">Upload Points with CSV File</label>
+
+<input type="file"
+       id="point_file" name="point_file"
+       accept=".csv">
+
+<p>pro-tip: the file should look like the following, where each row is a point of dimension <i>N</i></p>
+
+<table>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>-1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>-2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td colspan="4"><span>...</span></td>
+    </tr>
+</table>
+
+
+<label for="direction_file">Upload Illumination Directions with CSV File</label>
+
+<input type="file"
+       id="direction_file" name="direction_file"
+       accept=".csv">
+
+
+<p>pro-tip: the file should look like the following, where each row is a vector of dimension <i>N</i></p>
+
+<table>
+    <tr>
+        <td>2</td>
+        <td>4</td>
+        <td>3</td>
+        <td>-1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>-2</td>
+        <td>3</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>6</td>
+        <td>6</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td colspan="4"><span>...</span></td>
+    </tr>
+</table>
+
+
+<button>Compute!</button>
