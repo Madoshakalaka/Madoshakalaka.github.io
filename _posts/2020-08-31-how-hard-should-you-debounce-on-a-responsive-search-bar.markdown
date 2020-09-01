@@ -30,7 +30,7 @@ To debounce means we will wait for a certain time of inactivity before we send a
 
 How long we should wait is then a crucial question. Too long, and the user feels laggy, too short, and the debouncing is not effective. To do a decent job, we need to know how fast people type, and wait for a little longer than the time interval between key strokes. 
 
-To determining the wait time for debouncing, I studied a research conducted over 4,000 people in the 90s ([download pdf here](/assets/typing-study.pdf)). The research recorded the distribution of peoples typing speed in terms of word per minute, or wpm. With some calculation involving average frequent English word length, accounting spaces between each word, I compile the following table:
+To determining the wait time for debouncing, I studied a research conducted over 4,000 people in the 90s ([download pdf here](/assets/typing-study.pdf)). The research recorded the distribution of people's typing speed in terms of word per minute, or wpm. With some calculation involving the average frequent English word length, accounting for spaces between each word, I compile the following table:
 
 |                           | Time between keystrokes (ms)   |
 |---------------------------|-------------|
