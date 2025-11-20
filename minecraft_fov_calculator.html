@@ -1,0 +1,250 @@
+---
+layout: page
+permalink: /tools/minecraft-fov-calculator/
+description: Calculate the best FOV setting for minecraft to get rid of motion sickness
+exclude: true
+title: Minecraft FOV Calculator
+---
+
+<style>
+  input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px 5px 5px 0;
+    width: 100px;
+  }
+  select {
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+  }
+  button:hover {
+    background: #45a049;
+  }
+  button.delete {
+    background: #f44336;
+    padding: 5px 10px;
+  }
+  button.delete:hover {
+    background: #da190b;
+  }
+  .result {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 15px;
+    background: #e8f5e9;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background: #f5f5f5;
+    font-weight: bold;
+  }
+  figure {
+    margin: 20px 0;
+    text-align: center;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+  }
+  figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+  }
+</style>
+
+<h1>Minecraft FOV Calculator - Kill Motion Sickness</h1>
+
+<div id="calculator">
+  <label>
+    <h2>The height of your Minecraft window</h2>
+    <p>If you play in fullscreen mode, it's the height of your monitor. If you play in maximized window mode, it's a bit less than the height of your monitor (by roughly 2cm).<br>
+    Note: a 27 inch monitor has a DIAGONAL length of 27 inch, not the height. look up monitor dimensions <a href="https://en.tab-tv.com/?page_id=7333#:~:text=Size%20screen%2019%2D105%20inch%20height%20and%20width" rel="noopener" target="_blank">here</a></p>
+    <input type="number" id="height" value="31.6" step="0.1" min="0">
+    <select id="heightUnit">
+      <option value="cm" selected>cm</option>
+      <option value="inch">inch</option>
+    </select>
+  </label>
+
+  <label>
+    <h2>The distance between your eyes and the center of the screen</h2>
+    <input type="number" id="distance" value="65.0" step="0.1" min="0">
+    <select id="distanceUnit">
+      <option value="cm" selected>cm</option>
+      <option value="inch">inch</option>
+    </select>
+  </label>
+
+  <div class="result">
+    BEST FOV: <span id="result">0</span>
+  </div>
+
+  <button onclick="saveNote()">Take Notes (chair position, posture, monitor etc.)</button>
+
+  <table id="notesTable">
+    <thead>
+      <tr>
+        <th>Window Height</th>
+        <th>Distance</th>
+        <th>FOV</th>
+        <th>Notes</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="notesList"></tbody>
+  </table>
+</div>
+
+<hr>
+
+<h1>How it Works</h1>
+<p>By using trigonometry, it calculates the FOV such that the game's window looks like a portal to the game world, not too wide, not too narrow.<br>
+This convinces your brain that what you are seeing is real and stops dizziness.</p>
+
+<h1>Other Tips</h1>
+<ul>
+  <li>Disable 'View Bobbing'</li>
+  <li>Use a realistic looking shader, I recommend SEUS</li>
+  <li>Disable 'Dynamic FOV'</li>
+  <li>Lower mouse dpi</li>
+</ul>
+
+<p>It might be impossible to get a playable FOV from a 'small' 27 inch monitor in landscape mode. You would have to either sit very very close or turn the FOV way down which affects gameplay a lot. I actually recommend playing in portrait mode on these monitors, you can also try to play on huge TVs too, like 50 inch ones.</p>
+
+<figure>
+  <img src="{{ '/assets/portrait-27-inch.jpg' | relative_url }}" alt="use portrait mode now">
+  <figcaption>portrait mode actually looks decent</figcaption>
+</figure>
+
+<script>
+  // Unit conversion
+  function cmToInch(cm) {
+    return cm / 2.54;
+  }
+
+  function inchToCm(inch) {
+    return inch * 2.54;
+  }
+
+  // FOV calculation
+  function calculateFOV(heightCm, distanceCm) {
+    const rad = 2.0 * Math.atan((heightCm * 0.5) / distanceCm);
+    return (180.0 * rad) / Math.PI;
+  }
+
+  // Get value in cm regardless of selected unit
+  function getValueInCm(inputId, unitId) {
+    const value = parseFloat(document.getElementById(inputId).value);
+    const unit = document.getElementById(unitId).value;
+    return unit === 'inch' ? inchToCm(value) : value;
+  }
+
+  // Update FOV result
+  function updateResult() {
+    const heightCm = getValueInCm('height', 'heightUnit');
+    const distanceCm = getValueInCm('distance', 'distanceUnit');
+
+    if (isNaN(heightCm) || isNaN(distanceCm) || heightCm <= 0 || distanceCm <= 0) {
+      document.getElementById('result').textContent = 'Invalid input';
+      return;
+    }
+
+    const fov = calculateFOV(heightCm, distanceCm);
+    document.getElementById('result').textContent = Math.round(fov);
+  }
+
+  // Load notes from localStorage
+  function loadNotes() {
+    const notesJson = localStorage.getItem('minecraftFovNotes');
+    return notesJson ? JSON.parse(notesJson) : [
+      { height: 31.6, heightUnit: 'cm', distance: 52.0, distanceUnit: 'cm', note: 'sitting straight but relaxed, 27\'\' monitor, maximized window' },
+      { height: 31.6, heightUnit: 'cm', distance: 22.0, distanceUnit: 'cm', note: 'sitting close, 27\'\' monitor, maximized window' },
+      { height: 33.6, heightUnit: 'cm', distance: 69.0, distanceUnit: 'cm', note: 'slouched, 27\'\' monitor, fullscreen' }
+    ];
+  }
+
+  // Save notes to localStorage
+  function saveNotesToStorage(notes) {
+    localStorage.setItem('minecraftFovNotes', JSON.stringify(notes));
+  }
+
+  // Render notes table
+  function renderNotes() {
+    const notes = loadNotes();
+    const tbody = document.getElementById('notesList');
+    tbody.innerHTML = '';
+
+    notes.forEach((note, index) => {
+      const heightCm = note.heightUnit === 'inch' ? inchToCm(note.height) : note.height;
+      const distanceCm = note.distanceUnit === 'inch' ? inchToCm(note.distance) : note.distance;
+      const fov = Math.round(calculateFOV(heightCm, distanceCm));
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${note.height} ${note.heightUnit}</td>
+        <td>${note.distance} ${note.distanceUnit}</td>
+        <td>${fov}</td>
+        <td>${note.note}</td>
+        <td><button class="delete" onclick="deleteNote(${index})">Delete</button></td>
+      `;
+      tbody.appendChild(row);
+    });
+  }
+
+  // Save a new note
+  function saveNote() {
+    const noteText = prompt('Note text (chair position, posture, monitor etc.):', '');
+    if (noteText === null || noteText.trim() === '') return;
+
+    const notes = loadNotes();
+    notes.push({
+      height: parseFloat(document.getElementById('height').value),
+      heightUnit: document.getElementById('heightUnit').value,
+      distance: parseFloat(document.getElementById('distance').value),
+      distanceUnit: document.getElementById('distanceUnit').value,
+      note: noteText
+    });
+
+    saveNotesToStorage(notes);
+    renderNotes();
+  }
+
+  // Delete a note
+  function deleteNote(index) {
+    const notes = loadNotes();
+    notes.splice(index, 1);
+    saveNotesToStorage(notes);
+    renderNotes();
+  }
+
+  // Event listeners
+  document.getElementById('height').addEventListener('input', updateResult);
+  document.getElementById('heightUnit').addEventListener('change', updateResult);
+  document.getElementById('distance').addEventListener('input', updateResult);
+  document.getElementById('distanceUnit').addEventListener('change', updateResult);
+
+  // Initialize
+  updateResult();
+  renderNotes();
+</script>

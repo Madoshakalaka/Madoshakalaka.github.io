@@ -22,7 +22,7 @@ Time to lay out all your spare keypads and keyboards and build your self a real 
 
 - Use `evtest` to check device info
 
-- `vim /lib/udev/hwdb.d/60-keyboard.hwdb` and follow the instruction
+- `vim /etc/udev/hwdb.d/60-keyboard.hwdb` and follow the instruction
 
 ---
 
