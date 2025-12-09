@@ -18,6 +18,16 @@ The pitch accent is notated using circled numbers where:
 - **① (Atamadaka)**: First mora high, then drops
 - **②③④... (Nakadaka)**: Pitch drops after the indicated mora
 
+<div class="data-filter-panel">
+<div class="filter-header">Data Filter</div>
+<label class="toggle-switch">
+<input type="checkbox" id="excludeCompound" onchange="updateTables()">
+<span class="slider"></span>
+<span class="toggle-label">Exclude compound verbs (e.g., 思い出す, 引き受ける)</span>
+</label>
+<div class="filter-note">This filter applies to all statistics below</div>
+</div>
+
 ## Overall Results
 
 <div class="stats-container">
@@ -34,13 +44,6 @@ The pitch accent is notated using circled numbers where:
 <tbody id="summaryBody">
 </tbody>
 </table>
-</div>
-
-<div class="toggle-container">
-<label>
-<input type="checkbox" id="excludeCompound" onchange="updateTables()">
-<span>Exclude compound verbs (e.g., 思い出す, 引き受ける)</span>
-</label>
 </div>
 
 We see a very interesting trend: lower level verbs tend to be heiban. It's safe to say that frequently used verbs are more likely to be heiban, reaching roughly 50% at the N5 level.
@@ -120,24 +123,75 @@ th {
   background: #fce4ec;
 }
 
-.toggle-container {
-  margin: 20px 0;
-  padding: 15px;
-  background: #f9f9f9;
-  border-radius: 8px;
+.data-filter-panel {
+  margin: 20px 0 30px 0;
+  padding: 14px 18px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
-.toggle-container label {
+.filter-header {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.toggle-switch {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 14px;
 }
 
-.toggle-container input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  transition: 0.2s;
+  flex-shrink: 0;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  bottom: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.toggle-switch input:checked + .slider {
+  background: #555;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.toggle-label {
+  color: #333;
+}
+
+.filter-note {
+  font-size: 11px;
+  color: #888;
+  margin-top: 8px;
 }
 
 .hypothesis-test {
@@ -308,7 +362,7 @@ function updateHypothesisTest(excludeCompound) {
   <ul>
     <li>Total: ${h.excludeTwoMora.total} verbs</li>
     <li>[-2] matches: ${h.excludeTwoMora.match} (${formatPercent(h.excludeTwoMora.match, h.excludeTwoMora.total)})</li>
-    <li>Heiban (no accent): ${h.excludeTwoMora.heiban} (${formatPercent(h.excludeTwoMora.heiban, h.excludeTwoMora.total)})</li>
+    <li>Heiban: ${h.excludeTwoMora.heiban} (${formatPercent(h.excludeTwoMora.heiban, h.excludeTwoMora.total)})</li>
   </ul>
   `;
 

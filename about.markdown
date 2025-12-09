@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I have a lot of names, some cringer than others.
+I go by a lot names, some cringier than others.
 
 Matt
 
