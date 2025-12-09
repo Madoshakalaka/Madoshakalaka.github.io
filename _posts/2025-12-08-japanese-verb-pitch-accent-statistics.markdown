@@ -53,7 +53,7 @@ We see a very interesting trend: lower level verbs tend to be heiban. It's safe 
 
 A commonly cited rule: **verbs tend to have their pitch drop on the second-to-last mora (the [-2] position)**.
 
-For a 3-mora verb like かくす, this would be ②. For a 4-mora verb like あたためる, this would be ③.
+For a 3-mora verb like かくす, this would be ②. For a 5-mora verb like あたためる, this would be ④.
 
 <div class="hypothesis-test">
 <h3>Results:</h3>
