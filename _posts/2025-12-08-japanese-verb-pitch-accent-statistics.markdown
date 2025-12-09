@@ -66,6 +66,7 @@ So yeah, the hypothesis holds some water.
 
 ## Detailed Breakdown by Pitch Number
 
+<div class="table-container">
 <table id="detailTable">
 <thead>
 <tr>
@@ -83,14 +84,17 @@ So yeah, the hypothesis holds some water.
 <tbody id="detailBody">
 </tbody>
 </table>
+</div>
 
 ## Following Up
 
 Would be interesting to weigh the verbs by frequency to produce an "effective" pitch accent distribution.
 
 <style>
-.stats-container {
+.stats-container,
+.table-container {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table {
@@ -98,12 +102,14 @@ table {
   border-collapse: collapse;
   margin: 20px 0;
   font-size: 14px;
+  min-width: 500px;
 }
 
 th, td {
   padding: 10px 12px;
   text-align: center;
   border: 1px solid #ddd;
+  white-space: nowrap;
 }
 
 th {
