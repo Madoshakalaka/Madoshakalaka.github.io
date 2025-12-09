@@ -4,8 +4,13 @@ title: About
 permalink: /about/
 ---
 
-I'm Matt Yan.
+I have a lot of names, some cringer than others.
 
-or I'm proudly Siyuan Yan (严思圆 /jǽn sz̩̄ː ɥǽn/) If you'd like to pronounce that.
+Matt
 
-I love geeky things.
+Mattuwu
+
+Siyuan  (思/sɯ˥˥/ 圆/ɥœn˧˥/)
+
+Madoka 🎀
+
