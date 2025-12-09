@@ -436,3 +436,5 @@ function toggleRawData(type) {
     <div id="compoundList">Loading...</div>
   </div>
 </div>
+
+*Compoundness is determined with LLM, mostly accurate with minor mis-classifications.
