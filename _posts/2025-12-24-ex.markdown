@@ -13,6 +13,11 @@ excerpt: "元カノは、僕の鼻毛にとても厳しい人だった。"
   background: white;
   padding: 10px 0;
 }
+.sticky-video iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
 </style>
 
 <div class="sticky-video">
