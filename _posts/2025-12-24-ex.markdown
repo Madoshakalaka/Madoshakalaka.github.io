@@ -5,7 +5,19 @@ comments: true
 excerpt: "元カノは、僕の鼻毛にとても厳しい人だった。"
 ---
 
+<style>
+.sticky-video {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  padding: 10px 0;
+}
+</style>
+
+<div class="sticky-video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ayF0ofjvF50?si=o2EWbpm9EYBkIetH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 元カノは、僕の鼻毛にとても厳しい人だった。
 
@@ -42,7 +54,9 @@ excerpt: "元カノは、僕の鼻毛にとても厳しい人だった。"
 「もう、貸して」
 
 彼女はそう言って、僕の手からハサミを取った。
+
 少しだけ嫌そうな、正直すぎる表情をしながら、
+
 何も言わずに僕の鼻毛を切り始めた。
 
 僕はそのまま、じっと動かずにいるしかない。
