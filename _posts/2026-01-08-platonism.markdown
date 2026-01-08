@@ -48,10 +48,10 @@ invented, created, 创造，发明
 </li>
 <li><strong>数学真理是被发现的，不是被创造的</strong><br/>
 比如：
-<ul>
-<li>质数有无限多个</li>
-<li>这个事实在人类出现之前就已经"是真的"。</li>
-</ul>
+<blockquote style="margin: 0.5em 0 0 1em; border-left: 2px solid #999; padding-left: 0.5em;">
+质数有无限多个<br/>
+这个事实在人类出现之前就已经"是真的"。
+</blockquote>
 </li>
 </ol>
 </blockquote>
