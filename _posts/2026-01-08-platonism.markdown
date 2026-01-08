@@ -18,9 +18,11 @@ excerpt: "今天在学并查集数据结构的时候看到一句话"
 
 “这个数据结构是谁**发明**的？”
 
-invent, create, 创造，发明
+> Disjoint-set forests were first...
 
-我脑中的 next token prediction 唯独没有给出 **describe**
+invented, created, 创造，发明
+
+我脑中的 next token prediction 唯独没有给出 **described**
 
 读到之后一阵恍然
 
